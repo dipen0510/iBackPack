@@ -15,6 +15,17 @@
 		D47805231F2CBC6E00CE24E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47805211F2CBC6E00CE24E1 /* LaunchScreen.storyboard */; };
 		D478052E1F2CBC6E00CE24E1 /* iBackPackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D478052D1F2CBC6E00CE24E1 /* iBackPackTests.m */; };
 		D47805391F2CBC6F00CE24E1 /* iBackPackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47805381F2CBC6F00CE24E1 /* iBackPackUITests.m */; };
+		D47806101F2CC0BE00CE24E1 /* GothamRnd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D47805D21F2CC0BE00CE24E1 /* GothamRnd-Bold.otf */; };
+		D47806111F2CC0BE00CE24E1 /* GothamRnd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = D47805D31F2CC0BE00CE24E1 /* GothamRnd-Book.otf */; };
+		D47806121F2CC0BE00CE24E1 /* GothamRnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D47805D41F2CC0BE00CE24E1 /* GothamRnd-Medium.otf */; };
+		D47806441F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806431F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m */; };
+		D47806491F2CD31000CE24E1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806471F2CD31000CE24E1 /* iCarousel.m */; };
+		D478064A1F2CD31000CE24E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47806481F2CD31000CE24E1 /* Info.plist */; };
+		D47806551F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D478064F1F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m */; };
+		D47806561F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806511F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m */; };
+		D47806571F2CD40900CE24E1 /* HTHorizontalSelectionList.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806531F2CD40900CE24E1 /* HTHorizontalSelectionList.m */; };
+		D478065C1F2CD46800CE24E1 /* AgendaBookHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D478065B1F2CD46800CE24E1 /* AgendaBookHomeViewController.m */; };
+		D47806621F2CD8FF00CE24E1 /* M13BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806611F2CD8FF00CE24E1 /* M13BadgeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,27 @@
 		D47805341F2CBC6F00CE24E1 /* iBackPackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBackPackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47805381F2CBC6F00CE24E1 /* iBackPackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBackPackUITests.m; sourceTree = "<group>"; };
 		D478053A1F2CBC6F00CE24E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D47805D21F2CC0BE00CE24E1 /* GothamRnd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Bold.otf"; sourceTree = "<group>"; };
+		D47805D31F2CC0BE00CE24E1 /* GothamRnd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Book.otf"; sourceTree = "<group>"; };
+		D47805D41F2CC0BE00CE24E1 /* GothamRnd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Medium.otf"; sourceTree = "<group>"; };
+		D47806421F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
+		D47806431F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSwipeBetweenViewControllers.m; sourceTree = "<group>"; };
+		D47806461F2CD31000CE24E1 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		D47806471F2CD31000CE24E1 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		D47806481F2CD31000CE24E1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D478064D1F2CD40900CE24E1 /* HTHorizontalSelectionListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTHorizontalSelectionListCell.h; sourceTree = "<group>"; };
+		D478064E1F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTHorizontalSelectionListCustomViewCell.h; sourceTree = "<group>"; };
+		D478064F1F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTHorizontalSelectionListCustomViewCell.m; sourceTree = "<group>"; };
+		D47806501F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTHorizontalSelectionListLabelCell.h; sourceTree = "<group>"; };
+		D47806511F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTHorizontalSelectionListLabelCell.m; sourceTree = "<group>"; };
+		D47806521F2CD40900CE24E1 /* HTHorizontalSelectionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTHorizontalSelectionList.h; sourceTree = "<group>"; };
+		D47806531F2CD40900CE24E1 /* HTHorizontalSelectionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTHorizontalSelectionList.m; sourceTree = "<group>"; };
+		D478065A1F2CD46800CE24E1 /* AgendaBookHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaBookHomeViewController.h; sourceTree = "<group>"; };
+		D478065B1F2CD46800CE24E1 /* AgendaBookHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaBookHomeViewController.m; sourceTree = "<group>"; };
+		D478065D1F2CD6FC00CE24E1 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D478065E1F2CD71600CE24E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D47806601F2CD8FF00CE24E1 /* M13BadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13BadgeView.h; sourceTree = "<group>"; };
+		D47806611F2CD8FF00CE24E1 /* M13BadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13BadgeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +133,9 @@
 		D47805121F2CBC6E00CE24E1 /* iBackPack */ = {
 			isa = PBXGroup;
 			children = (
+				D47806591F2CD45400CE24E1 /* AgendaBook */,
+				D47806401F2CD1EC00CE24E1 /* Library */,
+				D47805C31F2CC0BE00CE24E1 /* Resources */,
 				D47805161F2CBC6E00CE24E1 /* AppDelegate.h */,
 				D47805171F2CBC6E00CE24E1 /* AppDelegate.m */,
 				D47805191F2CBC6E00CE24E1 /* ViewController.h */,
@@ -118,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				D47805141F2CBC6E00CE24E1 /* main.m */,
+				D478065D1F2CD6FC00CE24E1 /* Constants.h */,
+				D478065E1F2CD71600CE24E1 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +175,88 @@
 				D478053A1F2CBC6F00CE24E1 /* Info.plist */,
 			);
 			path = iBackPackUITests;
+			sourceTree = "<group>";
+		};
+		D47805C31F2CC0BE00CE24E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D47805D21F2CC0BE00CE24E1 /* GothamRnd-Bold.otf */,
+				D47805D31F2CC0BE00CE24E1 /* GothamRnd-Book.otf */,
+				D47805D41F2CC0BE00CE24E1 /* GothamRnd-Medium.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D47806401F2CD1EC00CE24E1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D478065F1F2CD8FF00CE24E1 /* M13BadgeView */,
+				D478064B1F2CD40900CE24E1 /* HorizontalSelectionList */,
+				D47806451F2CD31000CE24E1 /* iCarousel */,
+				D47806411F2CD1EC00CE24E1 /* SwipViewController */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D47806411F2CD1EC00CE24E1 /* SwipViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D47806421F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.h */,
+				D47806431F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m */,
+			);
+			path = SwipViewController;
+			sourceTree = "<group>";
+		};
+		D47806451F2CD31000CE24E1 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				D47806461F2CD31000CE24E1 /* iCarousel.h */,
+				D47806471F2CD31000CE24E1 /* iCarousel.m */,
+				D47806481F2CD31000CE24E1 /* Info.plist */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		D478064B1F2CD40900CE24E1 /* HorizontalSelectionList */ = {
+			isa = PBXGroup;
+			children = (
+				D478064C1F2CD40900CE24E1 /* Cells */,
+				D47806521F2CD40900CE24E1 /* HTHorizontalSelectionList.h */,
+				D47806531F2CD40900CE24E1 /* HTHorizontalSelectionList.m */,
+			);
+			name = HorizontalSelectionList;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D478064C1F2CD40900CE24E1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D478064D1F2CD40900CE24E1 /* HTHorizontalSelectionListCell.h */,
+				D478064E1F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.h */,
+				D478064F1F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m */,
+				D47806501F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.h */,
+				D47806511F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D47806591F2CD45400CE24E1 /* AgendaBook */ = {
+			isa = PBXGroup;
+			children = (
+				D478065A1F2CD46800CE24E1 /* AgendaBookHomeViewController.h */,
+				D478065B1F2CD46800CE24E1 /* AgendaBookHomeViewController.m */,
+			);
+			name = AgendaBook;
+			sourceTree = "<group>";
+		};
+		D478065F1F2CD8FF00CE24E1 /* M13BadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				D47806601F2CD8FF00CE24E1 /* M13BadgeView.h */,
+				D47806611F2CD8FF00CE24E1 /* M13BadgeView.m */,
+			);
+			name = M13BadgeView;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +370,10 @@
 				D47805231F2CBC6E00CE24E1 /* LaunchScreen.storyboard in Resources */,
 				D47805201F2CBC6E00CE24E1 /* Assets.xcassets in Resources */,
 				D478051E1F2CBC6E00CE24E1 /* Main.storyboard in Resources */,
+				D47806121F2CC0BE00CE24E1 /* GothamRnd-Medium.otf in Resources */,
+				D47806111F2CC0BE00CE24E1 /* GothamRnd-Book.otf in Resources */,
+				D47806101F2CC0BE00CE24E1 /* GothamRnd-Bold.otf in Resources */,
+				D478064A1F2CD31000CE24E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +399,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D478051B1F2CBC6E00CE24E1 /* ViewController.m in Sources */,
+				D47806491F2CD31000CE24E1 /* iCarousel.m in Sources */,
+				D478065C1F2CD46800CE24E1 /* AgendaBookHomeViewController.m in Sources */,
+				D47806551F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m in Sources */,
 				D47805181F2CBC6E00CE24E1 /* AppDelegate.m in Sources */,
+				D47806561F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m in Sources */,
 				D47805151F2CBC6E00CE24E1 /* main.m in Sources */,
+				D47806571F2CD40900CE24E1 /* HTHorizontalSelectionList.m in Sources */,
+				D47806621F2CD8FF00CE24E1 /* M13BadgeView.m in Sources */,
+				D47806441F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = iBackPack/PrefixHeader.pch;
 				INFOPLIST_FILE = iBackPack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.iBackPack;
@@ -440,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = iBackPack/PrefixHeader.pch;
 				INFOPLIST_FILE = iBackPack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.iBackPack;

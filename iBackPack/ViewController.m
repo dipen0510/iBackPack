@@ -17,6 +17,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self setupInitialUI];
+    
+}
+
+- (void) setupInitialUI {
+    
+    [self drawShadowForView:_agendaBookView];
+    [self drawShadowForView:_flashCardsView];
+    [self drawShadowForView:_skillsView];
+    [self drawShadowForView:_notebookView];
+    [self drawShadowForView:_libraryView];
+    [self drawShadowForView:_settingsView];
+    
+    [_agendaBookView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(agendaBookTapped)]];
+    _agendaBookView.userInteractionEnabled = YES;
+    
+    
+}
+
+- (void) agendaBookTapped {
+    
+    [self performSegueWithIdentifier:@"showAgendaBookSegue" sender:nil];
+    
 }
 
 
@@ -25,5 +49,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)drawShadowForView:(UIView *)cardView{
+    cardView.layer.cornerRadius = 8.0;
+    cardView.layer.masksToBounds = NO;
+    cardView.layer.shadowColor = [UIColor blackColor].CGColor;
+    cardView.layer.shadowOffset = CGSizeMake(0.0f, 0.0f);
+    cardView.layer.shadowOpacity = 0.15f;
+    cardView.layer.shadowRadius = 10.0;
+    //    [cardView.layer setShouldRasterize:YES];
+    
+}
 
 @end
