@@ -26,6 +26,12 @@
 		D47806571F2CD40900CE24E1 /* HTHorizontalSelectionList.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806531F2CD40900CE24E1 /* HTHorizontalSelectionList.m */; };
 		D478065C1F2CD46800CE24E1 /* AgendaBookHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D478065B1F2CD46800CE24E1 /* AgendaBookHomeViewController.m */; };
 		D47806621F2CD8FF00CE24E1 /* M13BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806611F2CD8FF00CE24E1 /* M13BadgeView.m */; };
+		D478066C1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D478066A1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m */; };
+		D478066D1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D478066B1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib */; };
+		D47806711F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D478066F1F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.m */; };
+		D47806721F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47806701F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib */; };
+		D47806761F2DBFC000CE24E1 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806751F2DBFC000CE24E1 /* DLRadioButton.m */; };
+		D47806771F2DDC3300CE24E1 /* AgendaBookHomeCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D478066A1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,14 @@
 		D478065E1F2CD71600CE24E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D47806601F2CD8FF00CE24E1 /* M13BadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13BadgeView.h; sourceTree = "<group>"; };
 		D47806611F2CD8FF00CE24E1 /* M13BadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13BadgeView.m; sourceTree = "<group>"; };
+		D47806691F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaBookHomeCellViewController.h; sourceTree = "<group>"; };
+		D478066A1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaBookHomeCellViewController.m; sourceTree = "<group>"; };
+		D478066B1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgendaBookHomeCellViewController.xib; sourceTree = "<group>"; };
+		D478066E1F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaBookHomeTableViewCell.h; sourceTree = "<group>"; };
+		D478066F1F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaBookHomeTableViewCell.m; sourceTree = "<group>"; };
+		D47806701F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgendaBookHomeTableViewCell.xib; sourceTree = "<group>"; };
+		D47806741F2DBFC000CE24E1 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		D47806751F2DBFC000CE24E1 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +204,7 @@
 		D47806401F2CD1EC00CE24E1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D47806731F2DBFC000CE24E1 /* DLRadioButton */,
 				D478065F1F2CD8FF00CE24E1 /* M13BadgeView */,
 				D478064B1F2CD40900CE24E1 /* HorizontalSelectionList */,
 				D47806451F2CD31000CE24E1 /* iCarousel */,
@@ -243,6 +258,7 @@
 		D47806591F2CD45400CE24E1 /* AgendaBook */ = {
 			isa = PBXGroup;
 			children = (
+				D47806631F2DB71500CE24E1 /* Cells */,
 				D478065A1F2CD46800CE24E1 /* AgendaBookHomeViewController.h */,
 				D478065B1F2CD46800CE24E1 /* AgendaBookHomeViewController.m */,
 			);
@@ -257,6 +273,28 @@
 			);
 			name = M13BadgeView;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		D47806631F2DB71500CE24E1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D47806691F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.h */,
+				D478066A1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m */,
+				D478066B1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib */,
+				D478066E1F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.h */,
+				D478066F1F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.m */,
+				D47806701F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D47806731F2DBFC000CE24E1 /* DLRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				D47806741F2DBFC000CE24E1 /* DLRadioButton.h */,
+				D47806751F2DBFC000CE24E1 /* DLRadioButton.m */,
+			);
+			path = DLRadioButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D478066D1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib in Resources */,
 				D47805231F2CBC6E00CE24E1 /* LaunchScreen.storyboard in Resources */,
 				D47805201F2CBC6E00CE24E1 /* Assets.xcassets in Resources */,
 				D478051E1F2CBC6E00CE24E1 /* Main.storyboard in Resources */,
@@ -374,6 +413,7 @@
 				D47806111F2CC0BE00CE24E1 /* GothamRnd-Book.otf in Resources */,
 				D47806101F2CC0BE00CE24E1 /* GothamRnd-Bold.otf in Resources */,
 				D478064A1F2CD31000CE24E1 /* Info.plist in Resources */,
+				D47806721F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,9 +445,12 @@
 				D47805181F2CBC6E00CE24E1 /* AppDelegate.m in Sources */,
 				D47806561F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m in Sources */,
 				D47805151F2CBC6E00CE24E1 /* main.m in Sources */,
+				D47806711F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.m in Sources */,
 				D47806571F2CD40900CE24E1 /* HTHorizontalSelectionList.m in Sources */,
+				D47806761F2DBFC000CE24E1 /* DLRadioButton.m in Sources */,
 				D47806621F2CD8FF00CE24E1 /* M13BadgeView.m in Sources */,
 				D47806441F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m in Sources */,
+				D478066C1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47806771F2DDC3300CE24E1 /* AgendaBookHomeCellViewController.m in Sources */,
 				D47805391F2CBC6F00CE24E1 /* iBackPackUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRnd-Bold.otf">
+            <string>GothamRounded-Bold</string>
+        </array>
+        <array key="GothamRnd-Book.otf">
+            <string>GothamRounded-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AgendaBookHomeCellViewController">
+            <connections>
+                <outlet property="bodyView" destination="3rS-Ti-KkQ" id="yry-Ko-ywn"/>
+                <outlet property="dateLabel" destination="oEJ-VN-7Ae" id="oKY-v5-umK"/>
+                <outlet property="dueButton" destination="Com-rJ-zF0" id="Rd3-OZ-wHW"/>
+                <outlet property="headerView" destination="Ud1-jv-Wv7" id="dL6-Z2-mcv"/>
+                <outlet property="summaryTableView" destination="QfR-YA-mRB" id="qcD-12-5hG"/>
+                <outlet property="upcomingButton" destination="z8Y-hr-0Tv" id="ELH-Kl-08k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="543"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-jv-Wv7">
+                    <rect key="frame" x="43" y="0.0" width="290" height="125"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, April 22nd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEJ-VN-7Ae">
+                            <rect key="frame" x="8" y="32" width="274" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="96R-3o-p1x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="14"/>
+                            <color key="textColor" red="0.01176470588" green="0.52549019610000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8Y-hr-0Tv">
+                            <rect key="frame" x="157" y="73" width="109" height="35"/>
+                            <color key="backgroundColor" red="0.98431372549019602" green="0.77254901960784317" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="13"/>
+                            <state key="normal" title="2 Upcoming">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Com-rJ-zF0">
+                            <rect key="frame" x="24" y="73" width="109" height="35"/>
+                            <color key="backgroundColor" red="0.25490196078431371" green="0.86274509803921573" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Flf-6j-7QW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="13"/>
+                            <state key="normal" title="3 Due">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="z8Y-hr-0Tv" firstAttribute="height" secondItem="Com-rJ-zF0" secondAttribute="height" id="D0V-s3-6KV"/>
+                        <constraint firstAttribute="bottom" secondItem="Com-rJ-zF0" secondAttribute="bottom" constant="17" id="aIB-zx-F6X"/>
+                        <constraint firstAttribute="height" constant="125" id="dG3-m3-eEM"/>
+                        <constraint firstItem="z8Y-hr-0Tv" firstAttribute="bottom" secondItem="Com-rJ-zF0" secondAttribute="bottom" id="edD-dE-djc"/>
+                        <constraint firstItem="Com-rJ-zF0" firstAttribute="leading" secondItem="Ud1-jv-Wv7" secondAttribute="leading" constant="24" id="fhY-k0-vl3"/>
+                        <constraint firstAttribute="trailing" secondItem="oEJ-VN-7Ae" secondAttribute="trailing" constant="8" id="gXE-hU-OYG"/>
+                        <constraint firstItem="z8Y-hr-0Tv" firstAttribute="leading" secondItem="Com-rJ-zF0" secondAttribute="trailing" constant="24" id="jBo-ut-pnZ"/>
+                        <constraint firstItem="z8Y-hr-0Tv" firstAttribute="width" secondItem="Com-rJ-zF0" secondAttribute="width" id="pXJ-PB-xRZ"/>
+                        <constraint firstItem="oEJ-VN-7Ae" firstAttribute="leading" secondItem="Ud1-jv-Wv7" secondAttribute="leading" constant="8" id="q3b-tF-tDA"/>
+                        <constraint firstAttribute="trailing" secondItem="z8Y-hr-0Tv" secondAttribute="trailing" constant="24" id="qxS-Tf-sDY"/>
+                        <constraint firstItem="oEJ-VN-7Ae" firstAttribute="top" secondItem="Ud1-jv-Wv7" secondAttribute="top" constant="32" id="sVV-6V-D8n"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rS-Ti-KkQ">
+                    <rect key="frame" x="16" y="143" width="343" height="380"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QfR-YA-mRB">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="380"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="RFx-gF-hcu"/>
+                                <outlet property="delegate" destination="-1" id="0e0-jo-sMs"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QfR-YA-mRB" secondAttribute="bottom" id="KFw-kp-sFr"/>
+                        <constraint firstItem="QfR-YA-mRB" firstAttribute="leading" secondItem="3rS-Ti-KkQ" secondAttribute="leading" id="iGs-Ya-iK1"/>
+                        <constraint firstItem="QfR-YA-mRB" firstAttribute="top" secondItem="3rS-Ti-KkQ" secondAttribute="top" id="jlT-jV-Fzu"/>
+                        <constraint firstAttribute="trailing" secondItem="QfR-YA-mRB" secondAttribute="trailing" id="lVP-dD-R1z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ud1-jv-Wv7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="38W-Yf-SDv"/>
+                <constraint firstAttribute="trailing" secondItem="Ud1-jv-Wv7" secondAttribute="trailing" constant="42" id="EIh-4x-quU"/>
+                <constraint firstItem="3rS-Ti-KkQ" firstAttribute="top" secondItem="Ud1-jv-Wv7" secondAttribute="bottom" constant="18" id="FU4-0s-Khd"/>
+                <constraint firstAttribute="trailing" secondItem="3rS-Ti-KkQ" secondAttribute="trailing" constant="16" id="R3g-Vl-OMW"/>
+                <constraint firstItem="Ud1-jv-Wv7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="43" id="UWm-Z0-sOr"/>
+                <constraint firstItem="3rS-Ti-KkQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="pKc-GR-k8R"/>
+                <constraint firstAttribute="bottom" secondItem="3rS-Ti-KkQ" secondAttribute="bottom" constant="20" id="qum-ST-ADg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="129.5" y="83.5"/>
+        </view>
+    </objects>
+</document>

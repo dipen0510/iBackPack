@@ -7,6 +7,7 @@
 //
 
 #import "AgendaBookHomeViewController.h"
+#import "AgendaBookHomeCellViewController.h"
 
 @interface AgendaBookHomeViewController ()
 
@@ -26,12 +27,12 @@
 - (void) setupCaraouselDatasource {
     
     caraouselItems = [NSMutableArray array];
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 3; i++)
     {
         [caraouselItems addObject:@(i)];
     }
     
-    _carouselView.type = iCarouselTypeCoverFlow2;
+//    _carouselView.type = iCarouselTypeTimeMachine;
     [_carouselView reloadData];
     
 }
@@ -75,34 +76,38 @@
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
-    UILabel *label = nil;
+    
+    AgendaBookHomeCellViewController* agendaBookCellView = [[AgendaBookHomeCellViewController alloc] init];
     
     //create new view if no view is available for recycling
-    if (view == nil)
-    {
-        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 200.0f)];
-        ((UIImageView *)view).image = [UIImage imageNamed:@"page.png"];
+//    if (view == nil)
+//    {
+//        agendaBookCellView = [[AgendaBookHomeCellViewController alloc] init];
+        agendaBookCellView.view.tag = 1;
+        agendaBookCellView.summaryTableView.tag = 2;
+        
+        view = [[UIView alloc] initWithFrame:_carouselView.frame];
         view.contentMode = UIViewContentModeCenter;
-        label = [[UILabel alloc] initWithFrame:view.bounds];
-        label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.textColor = [UIColor blackColor];
-        label.font = [label.font fontWithSize:50];
-        label.tag = 1;
-        [view addSubview:label];
-    }
-    else
-    {
-        //get a reference to the label in the recycled view
-        label = (UILabel *)[view viewWithTag:1];
-    }
+        [view addSubview:agendaBookCellView.view];
+    
+        
+//    }
+//    else
+//    {
+//        //get a reference to the label in the recycled view
+//        agendaBookCellView.view = [view viewWithTag:1];
+//        agendaBookCellView.summaryTableView = (UITableView *)[view viewWithTag:2];
+//
+//    }
     
     //set item label
     //remember to always set any properties of your carousel item
     //views outside of the `if (view == nil) {...}` check otherwise
     //you'll get weird issues with carousel item content appearing
     //in the wrong place in the carousel
-    label.text = [caraouselItems[index] stringValue];
+//    label.text = [caraouselItems[index] stringValue];
+    
+    [agendaBookCellView.summaryTableView reloadData];
     
     return view;
 }

@@ -67,7 +67,7 @@
                                             <constraint firstAttribute="width" secondItem="pFl-j5-2SD" secondAttribute="height" multiplier="1:1" id="HaQ-q6-Bhy"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agenda Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxP-vY-Zhc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agenda Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="BxP-vY-Zhc">
                                         <rect key="frame" x="8" y="89" width="109" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="E9H-7a-GZ1"/>
@@ -97,7 +97,7 @@
                                             <constraint firstAttribute="width" secondItem="HkD-D5-OS0" secondAttribute="height" multiplier="1:1" id="Gyf-sP-ivJ"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCw-0S-mdi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="RCw-0S-mdi">
                                         <rect key="frame" x="8" y="89" width="109" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="ore-dx-vQi"/>
@@ -126,7 +126,7 @@
                                             <constraint firstAttribute="width" secondItem="Lir-lW-36J" secondAttribute="height" multiplier="1:1" id="mpi-NS-IkR"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQB-zs-sK4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="pQB-zs-sK4">
                                         <rect key="frame" x="8" y="89" width="109" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="5eO-N4-dob"/>
@@ -155,7 +155,7 @@
                                             <constraint firstAttribute="width" secondItem="ueX-tB-jFf" secondAttribute="height" multiplier="1:1" id="s2u-nq-AAc"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucC-IH-Ljc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="ucC-IH-Ljc">
                                         <rect key="frame" x="8" y="89" width="109" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="w03-VR-4be"/>
@@ -185,7 +185,7 @@
                                             <constraint firstAttribute="width" secondItem="rhr-Z4-8OU" secondAttribute="height" multiplier="1:1" id="VxI-fE-ILl"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byc-H2-kh7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Byc-H2-kh7">
                                         <rect key="frame" x="8" y="89" width="109" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="dgz-dM-Xjn"/>
@@ -214,7 +214,7 @@
                                             <constraint firstAttribute="width" secondItem="9Al-Tg-2tw" secondAttribute="height" multiplier="1:1" id="WK8-ND-KWo"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFM-JY-Cd4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="mFM-JY-Cd4">
                                         <rect key="frame" x="8" y="89" width="109" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="QCJ-o3-tlg"/>
