@@ -34,12 +34,20 @@
     [_agendaBookView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(agendaBookTapped)]];
     _agendaBookView.userInteractionEnabled = YES;
     
+    [_libraryView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(libraryTapped)]];
+    _libraryView.userInteractionEnabled = YES;
     
 }
 
 - (void) agendaBookTapped {
     
     [self performSegueWithIdentifier:@"showAgendaBookSegue" sender:nil];
+    
+}
+
+- (void) libraryTapped {
+    
+    [self performSegueWithIdentifier:@"showLibrarySegue" sender:nil];
     
 }
 

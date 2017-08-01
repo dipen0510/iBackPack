@@ -19,6 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
     [self setupCaraouselDatasource];
     [self setupHorizontalListDatasource];
     
@@ -44,7 +50,7 @@
     _footerSelectionList.dataSource = self;
     
     _footerSelectionList.centerButtons = YES;
-    _footerSelectionList.selectionIndicatorColor = [UIColor colorWithRed:14./255. green:110./255. blue:108./255. alpha:1.0];
+    _footerSelectionList.selectionIndicatorColor = [UIColor colorWithRed:3./255. green:134./255. blue:190./255. alpha:1.0];
     [_footerSelectionList setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
     _footerSelectionList.selectionIndicatorHorizontalPadding = (kScreenWidth/7.);
     
