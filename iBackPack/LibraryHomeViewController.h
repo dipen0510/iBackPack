@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTHorizontalSelectionList.h"
 
-@interface LibraryHomeViewController : UIViewController
+@interface LibraryHomeViewController : UIViewController <HTHorizontalSelectionListDataSource, HTHorizontalSelectionListDelegate>  {
+    NSMutableArray *footerItems;
+}
+
+@property (strong, nonatomic) IBOutlet HTHorizontalSelectionList *footerSelectionList;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property (weak, nonatomic) IBOutlet UITableView *libraryTableView;
 

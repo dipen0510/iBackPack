@@ -337,9 +337,13 @@
                                     <constraint firstItem="uxx-4x-rPI" firstAttribute="leading" secondItem="jtu-iM-e9Q" secondAttribute="leading" constant="23" id="d3U-jY-9N1"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1RN-vk-b5M">
-                                <rect key="frame" x="0.0" y="147" width="375" height="476"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1RN-vk-b5M">
+                                <rect key="frame" x="0.0" y="163" width="375" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OZz-Nz-jtx" id="Rl8-32-ZZe"/>
+                                    <outlet property="delegate" destination="OZz-Nz-jtx" id="W8Q-GR-gJp"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bO-Fo-CiH">
                                 <rect key="frame" x="16" y="96" width="343" height="51"/>
@@ -351,34 +355,6 @@
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd6-PE-Az4">
-                                <rect key="frame" x="0.0" y="623" width="94" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="M8g-E6-fHX"/>
-                                </constraints>
-                                <state key="normal" image="list"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrX-sc-2j0">
-                                <rect key="frame" x="94" y="623" width="93.5" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="qzy-ut-fHs"/>
-                                </constraints>
-                                <state key="normal" image="searchbar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77q-3P-8If">
-                                <rect key="frame" x="187.5" y="623" width="94" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Wju-Cn-QOj"/>
-                                </constraints>
-                                <state key="normal" image="blackbubble"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd5-Df-7ZC">
-                                <rect key="frame" x="281.5" y="623" width="93.5" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="IBm-Ph-WRz"/>
-                                </constraints>
-                                <state key="normal" image="download"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="Lk3-li-wW3">
                                 <rect key="frame" x="32" y="112" width="16" height="16"/>
                                 <constraints>
@@ -389,29 +365,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kgb-0I-Y0m" firstAttribute="top" secondItem="Sd5-Df-7ZC" secondAttribute="bottom" id="0GO-5j-fpE"/>
                             <constraint firstItem="jtu-iM-e9Q" firstAttribute="leading" secondItem="JhB-h9-Kr6" secondAttribute="leading" id="79h-zu-y8o"/>
                             <constraint firstAttribute="trailing" secondItem="7bO-Fo-CiH" secondAttribute="trailing" constant="16" id="7O4-5N-3kQ"/>
-                            <constraint firstItem="Sd5-Df-7ZC" firstAttribute="width" secondItem="vd6-PE-Az4" secondAttribute="width" id="9qf-W2-2GX"/>
-                            <constraint firstItem="77q-3P-8If" firstAttribute="width" secondItem="vd6-PE-Az4" secondAttribute="width" id="FFU-D8-xAQ"/>
-                            <constraint firstItem="kgb-0I-Y0m" firstAttribute="top" secondItem="vd6-PE-Az4" secondAttribute="bottom" id="Fy5-Ik-Iuf"/>
-                            <constraint firstItem="Sd5-Df-7ZC" firstAttribute="leading" secondItem="77q-3P-8If" secondAttribute="trailing" id="GMR-Wp-twj"/>
                             <constraint firstItem="kgb-0I-Y0m" firstAttribute="top" secondItem="1RN-vk-b5M" secondAttribute="bottom" constant="44" id="HCc-5Y-H4K"/>
                             <constraint firstAttribute="trailing" secondItem="1RN-vk-b5M" secondAttribute="trailing" id="IB7-og-F6p"/>
                             <constraint firstAttribute="trailing" secondItem="jtu-iM-e9Q" secondAttribute="trailing" id="KII-LN-FgS"/>
-                            <constraint firstItem="PrX-sc-2j0" firstAttribute="leading" secondItem="vd6-PE-Az4" secondAttribute="trailing" id="Lpt-1f-6Pb"/>
                             <constraint firstItem="Lk3-li-wW3" firstAttribute="top" secondItem="yjb-jq-5Y9" secondAttribute="bottom" constant="92" id="UsG-TH-yDZ"/>
-                            <constraint firstItem="kgb-0I-Y0m" firstAttribute="top" secondItem="PrX-sc-2j0" secondAttribute="bottom" id="W0C-EB-xXc"/>
                             <constraint firstItem="7bO-Fo-CiH" firstAttribute="top" secondItem="yjb-jq-5Y9" secondAttribute="bottom" constant="76" id="W8M-04-4Ev"/>
-                            <constraint firstItem="1RN-vk-b5M" firstAttribute="top" secondItem="7bO-Fo-CiH" secondAttribute="bottom" id="art-GZ-RLG"/>
+                            <constraint firstItem="1RN-vk-b5M" firstAttribute="top" secondItem="7bO-Fo-CiH" secondAttribute="bottom" constant="16" id="art-GZ-RLG"/>
                             <constraint firstItem="Lk3-li-wW3" firstAttribute="leading" secondItem="JhB-h9-Kr6" secondAttribute="leading" constant="32" id="dqM-ND-Qef"/>
-                            <constraint firstAttribute="trailing" secondItem="Sd5-Df-7ZC" secondAttribute="trailing" id="hbh-NK-9vo"/>
                             <constraint firstItem="1RN-vk-b5M" firstAttribute="leading" secondItem="JhB-h9-Kr6" secondAttribute="leading" id="ktf-pW-T7q"/>
-                            <constraint firstItem="kgb-0I-Y0m" firstAttribute="top" secondItem="77q-3P-8If" secondAttribute="bottom" id="nWe-hK-9TP"/>
-                            <constraint firstItem="PrX-sc-2j0" firstAttribute="width" secondItem="vd6-PE-Az4" secondAttribute="width" id="r2n-wH-Nqk"/>
-                            <constraint firstItem="77q-3P-8If" firstAttribute="leading" secondItem="PrX-sc-2j0" secondAttribute="trailing" id="rBt-Rl-6jo"/>
                             <constraint firstItem="7bO-Fo-CiH" firstAttribute="leading" secondItem="JhB-h9-Kr6" secondAttribute="leading" constant="16" id="rli-64-h9w"/>
-                            <constraint firstItem="vd6-PE-Az4" firstAttribute="leading" secondItem="JhB-h9-Kr6" secondAttribute="leading" id="uAL-cJ-UtG"/>
                             <constraint firstItem="jtu-iM-e9Q" firstAttribute="top" secondItem="JhB-h9-Kr6" secondAttribute="top" id="xS8-ug-lhx"/>
                         </constraints>
                     </view>
@@ -646,7 +610,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <attributes>
                                             <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="12" name="GothamRounded-Book"/>
@@ -1122,21 +1086,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blackbubble" width="15" height="15"/>
         <image name="blankProfile" width="225" height="204"/>
         <image name="books" width="512" height="512"/>
-        <image name="download" width="15" height="15"/>
         <image name="female_switch" width="323" height="84"/>
         <image name="ic_add_new" width="96" height="96"/>
         <image name="ic_house" width="96" height="96"/>
         <image name="layers" width="512" height="512"/>
-        <image name="list" width="15" height="15"/>
         <image name="male_switch" width="323" height="84"/>
         <image name="note_book" width="512" height="512"/>
         <image name="notebook" width="512" height="512"/>
         <image name="photo_camera" width="96" height="96"/>
         <image name="search" width="32" height="32"/>
-        <image name="searchbar" width="15" height="15"/>
         <image name="settings" width="512" height="512"/>
         <image name="star" width="512" height="512"/>
         <image name="user" width="512" height="512"/>

@@ -32,6 +32,8 @@
 		D47806721F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47806701F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib */; };
 		D47806761F2DBFC000CE24E1 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D47806751F2DBFC000CE24E1 /* DLRadioButton.m */; };
 		D47806771F2DDC3300CE24E1 /* AgendaBookHomeCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D478066A1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m */; };
+		D496B6631F376A05002ECDA8 /* LibraryHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D496B6611F376A05002ECDA8 /* LibraryHomeTableViewCell.m */; };
+		D496B6641F376A05002ECDA8 /* LibraryHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D496B6621F376A05002ECDA8 /* LibraryHomeTableViewCell.xib */; };
 		D4A8CB031F304F0300C68812 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB001F304F0300C68812 /* SkyFloatingLabelTextField.swift */; };
 		D4A8CB041F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB011F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
 		D4A8CB051F304F0300C68812 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB021F304F0300C68812 /* UITextField+fixCaretPosition.swift */; };
@@ -103,6 +105,9 @@
 		D47806701F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgendaBookHomeTableViewCell.xib; sourceTree = "<group>"; };
 		D47806741F2DBFC000CE24E1 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
 		D47806751F2DBFC000CE24E1 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+		D496B6601F376A05002ECDA8 /* LibraryHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHomeTableViewCell.h; sourceTree = "<group>"; };
+		D496B6611F376A05002ECDA8 /* LibraryHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHomeTableViewCell.m; sourceTree = "<group>"; };
+		D496B6621F376A05002ECDA8 /* LibraryHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryHomeTableViewCell.xib; sourceTree = "<group>"; };
 		D4A8CB001F304F0300C68812 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
 		D4A8CB011F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
 		D4A8CB021F304F0300C68812 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
@@ -318,6 +323,16 @@
 			path = DLRadioButton;
 			sourceTree = "<group>";
 		};
+		D496B65F1F376961002ECDA8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D496B6601F376A05002ECDA8 /* LibraryHomeTableViewCell.h */,
+				D496B6611F376A05002ECDA8 /* LibraryHomeTableViewCell.m */,
+				D496B6621F376A05002ECDA8 /* LibraryHomeTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		D4A8CAFF1F304F0300C68812 /* FloatingTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +347,7 @@
 		D4A8CB101F31130200C68812 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D496B65F1F376961002ECDA8 /* Cells */,
 				D4A8CB111F31131000C68812 /* LibraryHomeViewController.h */,
 				D4A8CB121F31131000C68812 /* LibraryHomeViewController.m */,
 			);
@@ -451,6 +467,7 @@
 			files = (
 				D478066D1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib in Resources */,
 				D47805231F2CBC6E00CE24E1 /* LaunchScreen.storyboard in Resources */,
+				D496B6641F376A05002ECDA8 /* LibraryHomeTableViewCell.xib in Resources */,
 				D47805201F2CBC6E00CE24E1 /* Assets.xcassets in Resources */,
 				D478051E1F2CBC6E00CE24E1 /* Main.storyboard in Resources */,
 				D47806121F2CC0BE00CE24E1 /* GothamRnd-Medium.otf in Resources */,
@@ -484,6 +501,7 @@
 			files = (
 				D478051B1F2CBC6E00CE24E1 /* ViewController.m in Sources */,
 				D4A8CB131F31131000C68812 /* LibraryHomeViewController.m in Sources */,
+				D496B6631F376A05002ECDA8 /* LibraryHomeTableViewCell.m in Sources */,
 				D4A8CB041F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
 				D4A8CB051F304F0300C68812 /* UITextField+fixCaretPosition.swift in Sources */,
 				D4A8CB081F3075DD00C68812 /* AgendaBookAddNewViewController.m in Sources */,
