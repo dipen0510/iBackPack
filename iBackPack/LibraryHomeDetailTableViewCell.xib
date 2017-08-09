@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRnd-Book.otf">
+            <string>GothamRounded-Book</string>
+        </array>
+        <array key="GothamRnd-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LibraryHomeDetailTableViewCell" rowHeight="60" id="li0-Rp-xp6" customClass="LibraryHomeDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="li0-Rp-xp6" id="MdG-cN-RMZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zb6-SP-6Hf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="englishbook" translatesAutoresizingMaskIntoConstraints="NO" id="flY-rQ-yY5">
+                                <rect key="frame" x="12" y="8" width="43.5" height="43.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="flY-rQ-yY5" secondAttribute="height" multiplier="1:1" id="3la-BS-oha"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English Learning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuS-ds-nUy">
+                                <rect key="frame" x="70.5" y="16" width="109" height="13"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQH-Jw-zu3">
+                                <rect key="frame" x="187.5" y="12" width="45" height="20"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="ONg-UB-9Im">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="20"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMh-lo-lEN">
+                                        <rect key="frame" x="0.0" y="1" width="39" height="20"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ONg-UB-9Im" secondAttribute="bottom" id="Cog-jr-Ktg"/>
+                                    <constraint firstAttribute="bottom" secondItem="JMh-lo-lEN" secondAttribute="bottom" constant="-1" id="F1W-sh-hyu"/>
+                                    <constraint firstAttribute="trailing" secondItem="JMh-lo-lEN" secondAttribute="trailing" constant="6" id="Gwg-xc-Hpb"/>
+                                    <constraint firstAttribute="width" constant="45" id="Mor-L8-Xwk"/>
+                                    <constraint firstItem="ONg-UB-9Im" firstAttribute="leading" secondItem="rQH-Jw-zu3" secondAttribute="leading" id="a3d-MJ-1rQ"/>
+                                    <constraint firstItem="JMh-lo-lEN" firstAttribute="leading" secondItem="rQH-Jw-zu3" secondAttribute="leading" id="gXL-DI-Vhc"/>
+                                    <constraint firstAttribute="height" constant="20" id="hOK-fX-hvf"/>
+                                    <constraint firstAttribute="trailing" secondItem="ONg-UB-9Im" secondAttribute="trailing" id="n4X-Ca-QLu"/>
+                                    <constraint firstItem="ONg-UB-9Im" firstAttribute="top" secondItem="rQH-Jw-zu3" secondAttribute="top" id="q2U-rh-dE1"/>
+                                    <constraint firstItem="JMh-lo-lEN" firstAttribute="top" secondItem="rQH-Jw-zu3" secondAttribute="top" constant="1" id="tqS-Xa-oyc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, cons..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZp-YX-xaR">
+                                <rect key="frame" x="70.5" y="37" width="207.5" height="12"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="flY-rQ-yY5" secondAttribute="bottom" constant="8" id="Bcw-9A-nxS"/>
+                            <constraint firstItem="flY-rQ-yY5" firstAttribute="leading" secondItem="Zb6-SP-6Hf" secondAttribute="leading" constant="12" id="SQo-4Q-Zn5"/>
+                            <constraint firstItem="eZp-YX-xaR" firstAttribute="leading" secondItem="flY-rQ-yY5" secondAttribute="trailing" constant="15" id="aKJ-6E-UKr"/>
+                            <constraint firstItem="flY-rQ-yY5" firstAttribute="top" secondItem="Zb6-SP-6Hf" secondAttribute="top" constant="8" id="dsH-ME-Vvf"/>
+                            <constraint firstItem="GuS-ds-nUy" firstAttribute="leading" secondItem="flY-rQ-yY5" secondAttribute="trailing" constant="15" id="eJF-hl-Do7"/>
+                            <constraint firstItem="rQH-Jw-zu3" firstAttribute="top" secondItem="Zb6-SP-6Hf" secondAttribute="top" constant="12" id="kBw-nd-fmg"/>
+                            <constraint firstItem="eZp-YX-xaR" firstAttribute="top" secondItem="GuS-ds-nUy" secondAttribute="bottom" constant="8" id="tN5-3X-Ova"/>
+                            <constraint firstItem="rQH-Jw-zu3" firstAttribute="leading" secondItem="GuS-ds-nUy" secondAttribute="trailing" constant="8" id="wh6-b5-uC3"/>
+                            <constraint firstItem="GuS-ds-nUy" firstAttribute="top" secondItem="Zb6-SP-6Hf" secondAttribute="top" constant="16" id="zAY-Ur-d7N"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Zb6-SP-6Hf" secondAttribute="bottom" id="6hZ-Lf-IvL"/>
+                    <constraint firstItem="Zb6-SP-6Hf" firstAttribute="leading" secondItem="MdG-cN-RMZ" secondAttribute="leading" id="KwQ-o3-M9D"/>
+                    <constraint firstAttribute="trailing" secondItem="Zb6-SP-6Hf" secondAttribute="trailing" id="pfA-NK-Mtp"/>
+                    <constraint firstItem="Zb6-SP-6Hf" firstAttribute="top" secondItem="MdG-cN-RMZ" secondAttribute="top" id="ygx-me-Woz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyLabel" destination="eZp-YX-xaR" id="Z9V-5q-jq5"/>
+                <outlet property="headerLabel" destination="GuS-ds-nUy" id="TcY-vy-I2L"/>
+                <outlet property="libraryContainerView" destination="Zb6-SP-6Hf" id="PzU-hJ-CwZ"/>
+                <outlet property="libraryImgView" destination="flY-rQ-yY5" id="181-gD-20W"/>
+                <outlet property="ratingLabel" destination="JMh-lo-lEN" id="tVB-WO-v4y"/>
+                <outlet property="ratingView" destination="rQH-Jw-zu3" id="iAY-32-ryT"/>
+            </connections>
+            <point key="canvasLocation" x="105" y="138"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="back" width="137" height="58"/>
+        <image name="englishbook" width="128" height="128"/>
+    </resources>
+</document>

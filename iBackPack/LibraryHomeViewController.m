@@ -8,6 +8,9 @@
 
 #import "LibraryHomeViewController.h"
 #import "LibraryHomeTableViewCell.h"
+#import "LibrarySearchTableViewCell.h"
+#import "LibraryChatTableViewCell.h"
+#import "LibraryDownloadTableViewCell.h"
 
 @interface LibraryHomeViewController ()
 
@@ -101,21 +104,72 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    if (_footerSelectionList.selectedButtonIndex == 0) {
+        static NSString *CellIdentifier = @"LibraryHomeTableViewCell";
+        LibraryHomeTableViewCell *cell = (LibraryHomeTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        if (cell == nil) {
+            // Load the top-level objects from the custom cell XIB.
+            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"LibraryHomeTableViewCell" owner:self options:nil];
+            // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+            cell = [topLevelObjects objectAtIndex:0];
+        }
+        
+        [self populateContentForLibraryCell:cell forIndexPath:indexPath];
+        
+        return cell;
+    }
     
+    if (_footerSelectionList.selectedButtonIndex == 1) {
+        
+        static NSString *CellIdentifier = @"LibrarySearchTableViewCell";
+        LibrarySearchTableViewCell *cell = (LibrarySearchTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        if (cell == nil) {
+            // Load the top-level objects from the custom cell XIB.
+            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"LibrarySearchTableViewCell" owner:self options:nil];
+            // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+            cell = [topLevelObjects objectAtIndex:0];
+        }
+        
+        [self populateContentForLibrarySearchCell:cell forIndexPath:indexPath];
+        
+        return cell;
+        
+    }
     
-    static NSString *CellIdentifier = @"LibraryHomeTableViewCell";
-    LibraryHomeTableViewCell *cell = (LibraryHomeTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (_footerSelectionList.selectedButtonIndex == 2) {
+        
+        static NSString *CellIdentifier = @"LibraryChatTableViewCell";
+        LibraryChatTableViewCell *cell = (LibraryChatTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        if (cell == nil) {
+            // Load the top-level objects from the custom cell XIB.
+            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"LibraryChatTableViewCell" owner:self options:nil];
+            // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+            cell = [topLevelObjects objectAtIndex:0];
+        }
+        
+        [self populateContentForLibraryChatCell:cell forIndexPath:indexPath];
+        
+        return cell;
+        
+    }
+    
+    static NSString *CellIdentifier = @"LibraryDownloadTableViewCell";
+    LibraryDownloadTableViewCell *cell = (LibraryDownloadTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
         // Load the top-level objects from the custom cell XIB.
-        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"LibraryHomeTableViewCell" owner:self options:nil];
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"LibraryDownloadTableViewCell" owner:self options:nil];
         // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
         cell = [topLevelObjects objectAtIndex:0];
     }
     
-    [self populateContentForLibraryCell:cell forIndexPath:indexPath];
+    [self populateContentForLibraryDownloadCell:cell forIndexPath:indexPath];
     
     return cell;
+    
     
     
 }
@@ -125,12 +179,37 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    if (_footerSelectionList.selectedButtonIndex == 0) {
+        [self performSegueWithIdentifier:@"showLibraryHomeDetailSegue" sender:nil];
+    }
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    return 105.;
+    if (_footerSelectionList.selectedButtonIndex == 0 || _footerSelectionList.selectedButtonIndex == 3) {
+        return 105;
+    }
+    
+    return 70.;
+    
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //add code here for when you hit delete
+    }
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return @"Remove";
     
 }
 
@@ -154,6 +233,69 @@
             default:
                 break;
         }
+    
+}
+
+- (void) populateContentForLibrarySearchCell:(LibrarySearchTableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    switch (indexPath.row) {
+        case 0:
+            cell.headerLabel.text = @"John Mathew";
+            break;
+        case 1:
+            cell.headerLabel.text = @"John Doe";
+            break;
+        case 2:
+            cell.headerLabel.text = @"John Corner";
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
+- (void) populateContentForLibraryChatCell:(LibraryChatTableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    switch (indexPath.row) {
+        case 0:
+            cell.headerLabel.text = @"Albert Nichols";
+            break;
+        case 1:
+            cell.headerLabel.text = @"Donna Rios";
+            break;
+        case 2:
+            cell.headerLabel.text = @"Albert Webb";
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
+- (void) populateContentForLibraryDownloadCell:(LibraryDownloadTableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    switch (indexPath.row) {
+        case 0:
+            cell.headerLabel.text = @"English Learning";
+            cell.ratingLabel.text = @"4.5";
+            break;
+        case 1:
+            cell.headerLabel.text = @"Geography Class";
+            cell.ratingLabel.text = @"4.8";
+            break;
+        case 2:
+            cell.headerLabel.text = @"Chemistry Data";
+            cell.ratingLabel.text = @"4.3";
+            break;
+            
+        default:
+            break;
+    }
     
 }
 
@@ -182,6 +324,7 @@
 
 - (void)selectionList:(HTHorizontalSelectionList *)selectionList didSelectButtonWithIndex:(NSInteger)index {
     // update the view for the corresponding index
+    [_libraryTableView reloadData];
 }
 
 

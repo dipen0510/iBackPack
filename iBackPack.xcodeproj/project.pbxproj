@@ -34,6 +34,15 @@
 		D47806771F2DDC3300CE24E1 /* AgendaBookHomeCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D478066A1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m */; };
 		D496B6631F376A05002ECDA8 /* LibraryHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D496B6611F376A05002ECDA8 /* LibraryHomeTableViewCell.m */; };
 		D496B6641F376A05002ECDA8 /* LibraryHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D496B6621F376A05002ECDA8 /* LibraryHomeTableViewCell.xib */; };
+		D49E437A1F3AE1830077DE84 /* LibraryHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E43791F3AE1830077DE84 /* LibraryHomeDetailViewController.m */; };
+		D49E437E1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E437C1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.m */; };
+		D49E437F1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49E437D1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib */; };
+		D49E43831F3B1EF80077DE84 /* LibrarySearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E43811F3B1EF80077DE84 /* LibrarySearchTableViewCell.m */; };
+		D49E43841F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49E43821F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib */; };
+		D49E43881F3B369C0077DE84 /* LibraryChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E43861F3B369C0077DE84 /* LibraryChatTableViewCell.m */; };
+		D49E43891F3B369C0077DE84 /* LibraryChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49E43871F3B369C0077DE84 /* LibraryChatTableViewCell.xib */; };
+		D49E438D1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E438B1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m */; };
+		D49E438E1F3B38B50077DE84 /* LibraryDownloadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49E438C1F3B38B50077DE84 /* LibraryDownloadTableViewCell.xib */; };
 		D4A8CB031F304F0300C68812 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB001F304F0300C68812 /* SkyFloatingLabelTextField.swift */; };
 		D4A8CB041F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB011F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
 		D4A8CB051F304F0300C68812 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB021F304F0300C68812 /* UITextField+fixCaretPosition.swift */; };
@@ -108,6 +117,20 @@
 		D496B6601F376A05002ECDA8 /* LibraryHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHomeTableViewCell.h; sourceTree = "<group>"; };
 		D496B6611F376A05002ECDA8 /* LibraryHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHomeTableViewCell.m; sourceTree = "<group>"; };
 		D496B6621F376A05002ECDA8 /* LibraryHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryHomeTableViewCell.xib; sourceTree = "<group>"; };
+		D49E43781F3AE1830077DE84 /* LibraryHomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHomeDetailViewController.h; sourceTree = "<group>"; };
+		D49E43791F3AE1830077DE84 /* LibraryHomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHomeDetailViewController.m; sourceTree = "<group>"; };
+		D49E437B1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHomeDetailTableViewCell.h; sourceTree = "<group>"; };
+		D49E437C1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHomeDetailTableViewCell.m; sourceTree = "<group>"; };
+		D49E437D1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryHomeDetailTableViewCell.xib; sourceTree = "<group>"; };
+		D49E43801F3B1EF80077DE84 /* LibrarySearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibrarySearchTableViewCell.h; sourceTree = "<group>"; };
+		D49E43811F3B1EF80077DE84 /* LibrarySearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibrarySearchTableViewCell.m; sourceTree = "<group>"; };
+		D49E43821F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibrarySearchTableViewCell.xib; sourceTree = "<group>"; };
+		D49E43851F3B369C0077DE84 /* LibraryChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryChatTableViewCell.h; sourceTree = "<group>"; };
+		D49E43861F3B369C0077DE84 /* LibraryChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryChatTableViewCell.m; sourceTree = "<group>"; };
+		D49E43871F3B369C0077DE84 /* LibraryChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryChatTableViewCell.xib; sourceTree = "<group>"; };
+		D49E438A1F3B38B50077DE84 /* LibraryDownloadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryDownloadTableViewCell.h; sourceTree = "<group>"; };
+		D49E438B1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryDownloadTableViewCell.m; sourceTree = "<group>"; };
+		D49E438C1F3B38B50077DE84 /* LibraryDownloadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryDownloadTableViewCell.xib; sourceTree = "<group>"; };
 		D4A8CB001F304F0300C68812 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
 		D4A8CB011F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
 		D4A8CB021F304F0300C68812 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
@@ -329,6 +352,18 @@
 				D496B6601F376A05002ECDA8 /* LibraryHomeTableViewCell.h */,
 				D496B6611F376A05002ECDA8 /* LibraryHomeTableViewCell.m */,
 				D496B6621F376A05002ECDA8 /* LibraryHomeTableViewCell.xib */,
+				D49E437B1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.h */,
+				D49E437C1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.m */,
+				D49E437D1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib */,
+				D49E43801F3B1EF80077DE84 /* LibrarySearchTableViewCell.h */,
+				D49E43811F3B1EF80077DE84 /* LibrarySearchTableViewCell.m */,
+				D49E43821F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib */,
+				D49E43851F3B369C0077DE84 /* LibraryChatTableViewCell.h */,
+				D49E43861F3B369C0077DE84 /* LibraryChatTableViewCell.m */,
+				D49E43871F3B369C0077DE84 /* LibraryChatTableViewCell.xib */,
+				D49E438A1F3B38B50077DE84 /* LibraryDownloadTableViewCell.h */,
+				D49E438B1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m */,
+				D49E438C1F3B38B50077DE84 /* LibraryDownloadTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -350,6 +385,8 @@
 				D496B65F1F376961002ECDA8 /* Cells */,
 				D4A8CB111F31131000C68812 /* LibraryHomeViewController.h */,
 				D4A8CB121F31131000C68812 /* LibraryHomeViewController.m */,
+				D49E43781F3AE1830077DE84 /* LibraryHomeDetailViewController.h */,
+				D49E43791F3AE1830077DE84 /* LibraryHomeDetailViewController.m */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -466,12 +503,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D478066D1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib in Resources */,
+				D49E43841F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib in Resources */,
+				D49E437F1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib in Resources */,
 				D47805231F2CBC6E00CE24E1 /* LaunchScreen.storyboard in Resources */,
+				D49E43891F3B369C0077DE84 /* LibraryChatTableViewCell.xib in Resources */,
 				D496B6641F376A05002ECDA8 /* LibraryHomeTableViewCell.xib in Resources */,
 				D47805201F2CBC6E00CE24E1 /* Assets.xcassets in Resources */,
 				D478051E1F2CBC6E00CE24E1 /* Main.storyboard in Resources */,
 				D47806121F2CC0BE00CE24E1 /* GothamRnd-Medium.otf in Resources */,
 				D47806111F2CC0BE00CE24E1 /* GothamRnd-Book.otf in Resources */,
+				D49E438E1F3B38B50077DE84 /* LibraryDownloadTableViewCell.xib in Resources */,
 				D47806101F2CC0BE00CE24E1 /* GothamRnd-Bold.otf in Resources */,
 				D478064A1F2CD31000CE24E1 /* Info.plist in Resources */,
 				D47806721F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib in Resources */,
@@ -501,12 +542,15 @@
 			files = (
 				D478051B1F2CBC6E00CE24E1 /* ViewController.m in Sources */,
 				D4A8CB131F31131000C68812 /* LibraryHomeViewController.m in Sources */,
+				D49E437E1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.m in Sources */,
+				D49E43831F3B1EF80077DE84 /* LibrarySearchTableViewCell.m in Sources */,
 				D496B6631F376A05002ECDA8 /* LibraryHomeTableViewCell.m in Sources */,
 				D4A8CB041F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
 				D4A8CB051F304F0300C68812 /* UITextField+fixCaretPosition.swift in Sources */,
 				D4A8CB081F3075DD00C68812 /* AgendaBookAddNewViewController.m in Sources */,
 				D47806491F2CD31000CE24E1 /* iCarousel.m in Sources */,
 				D478065C1F2CD46800CE24E1 /* AgendaBookHomeViewController.m in Sources */,
+				D49E438D1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m in Sources */,
 				D47806551F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m in Sources */,
 				D47805181F2CBC6E00CE24E1 /* AppDelegate.m in Sources */,
 				D47806561F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m in Sources */,
@@ -516,7 +560,9 @@
 				D47806571F2CD40900CE24E1 /* HTHorizontalSelectionList.m in Sources */,
 				D47806761F2DBFC000CE24E1 /* DLRadioButton.m in Sources */,
 				D47806621F2CD8FF00CE24E1 /* M13BadgeView.m in Sources */,
+				D49E437A1F3AE1830077DE84 /* LibraryHomeDetailViewController.m in Sources */,
 				D47806441F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m in Sources */,
+				D49E43881F3B369C0077DE84 /* LibraryChatTableViewCell.m in Sources */,
 				D4A8CB031F304F0300C68812 /* SkyFloatingLabelTextField.swift in Sources */,
 				D478066C1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m in Sources */,
 			);

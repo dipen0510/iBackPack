@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HTHorizontalSelectionList.h"
 
-@interface LibraryHomeViewController : UIViewController <HTHorizontalSelectionListDataSource, HTHorizontalSelectionListDelegate>  {
+@interface LibraryHomeViewController : UIViewController <HTHorizontalSelectionListDataSource, HTHorizontalSelectionListDelegate, UITableViewDataSource, UITableViewDelegate>  {
     NSMutableArray *footerItems;
 }
 
