@@ -52,6 +52,10 @@
 		D4CDFCC11F48083800E65F7E /* NotebookHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCC01F48083800E65F7E /* NotebookHomeViewController.m */; };
 		D4CDFCC51F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCC41F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m */; };
 		D4CDFCC91F4818C600E65F7E /* STCollapseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCC81F4818C600E65F7E /* STCollapseTableView.m */; };
+		D4CDFCCE1F4848FD00E65F7E /* NotebookSubFoldersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4CDFCCC1F4848FD00E65F7E /* NotebookSubFoldersTableViewCell.xib */; };
+		D4CDFCD61F484D8F00E65F7E /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCD21F484D8F00E65F7E /* MGSwipeButton.m */; };
+		D4CDFCD71F484D8F00E65F7E /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCD41F484D8F00E65F7E /* MGSwipeTableCell.m */; };
+		D4CDFCDA1F48500C00E65F7E /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCD91F48500C00E65F7E /* TestData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +153,13 @@
 		D4CDFCC41F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookFoldersCollectionViewCell.m; sourceTree = "<group>"; };
 		D4CDFCC71F4818C600E65F7E /* STCollapseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollapseTableView.h; sourceTree = "<group>"; };
 		D4CDFCC81F4818C600E65F7E /* STCollapseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollapseTableView.m; sourceTree = "<group>"; };
+		D4CDFCCC1F4848FD00E65F7E /* NotebookSubFoldersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotebookSubFoldersTableViewCell.xib; sourceTree = "<group>"; };
+		D4CDFCD11F484D8F00E65F7E /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		D4CDFCD21F484D8F00E65F7E /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		D4CDFCD31F484D8F00E65F7E /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		D4CDFCD41F484D8F00E65F7E /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		D4CDFCD81F48500C00E65F7E /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
+		D4CDFCD91F48500C00E65F7E /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +271,7 @@
 		D47806401F2CD1EC00CE24E1 /* Custom Controls */ = {
 			isa = PBXGroup;
 			children = (
+				D4CDFCCF1F484D8F00E65F7E /* MGSwipeTableCell */,
 				D4CDFCC61F4818C600E65F7E /* STCollapseTableView */,
 				D4A8CAFF1F304F0300C68812 /* FloatingTextField */,
 				D47806731F2DBFC000CE24E1 /* DLRadioButton */,
@@ -418,6 +430,7 @@
 			children = (
 				D4CDFCC31F480E0300E65F7E /* NotebookFoldersCollectionViewCell.h */,
 				D4CDFCC41F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m */,
+				D4CDFCCC1F4848FD00E65F7E /* NotebookSubFoldersTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -429,6 +442,19 @@
 				D4CDFCC81F4818C600E65F7E /* STCollapseTableView.m */,
 			);
 			path = STCollapseTableView;
+			sourceTree = "<group>";
+		};
+		D4CDFCCF1F484D8F00E65F7E /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				D4CDFCD81F48500C00E65F7E /* TestData.h */,
+				D4CDFCD91F48500C00E65F7E /* TestData.m */,
+				D4CDFCD11F484D8F00E65F7E /* MGSwipeButton.h */,
+				D4CDFCD21F484D8F00E65F7E /* MGSwipeButton.m */,
+				D4CDFCD31F484D8F00E65F7E /* MGSwipeTableCell.h */,
+				D4CDFCD41F484D8F00E65F7E /* MGSwipeTableCell.m */,
+			);
+			path = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,6 +571,7 @@
 				D478066D1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib in Resources */,
 				D49E43841F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib in Resources */,
 				D49E437F1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib in Resources */,
+				D4CDFCCE1F4848FD00E65F7E /* NotebookSubFoldersTableViewCell.xib in Resources */,
 				D47805231F2CBC6E00CE24E1 /* LaunchScreen.storyboard in Resources */,
 				D49E43891F3B369C0077DE84 /* LibraryChatTableViewCell.xib in Resources */,
 				D496B6641F376A05002ECDA8 /* LibraryHomeTableViewCell.xib in Resources */,
@@ -583,6 +610,7 @@
 				D478051B1F2CBC6E00CE24E1 /* ViewController.m in Sources */,
 				D4A8CB131F31131000C68812 /* LibraryHomeViewController.m in Sources */,
 				D49E437E1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.m in Sources */,
+				D4CDFCD71F484D8F00E65F7E /* MGSwipeTableCell.m in Sources */,
 				D49E43831F3B1EF80077DE84 /* LibrarySearchTableViewCell.m in Sources */,
 				D496B6631F376A05002ECDA8 /* LibraryHomeTableViewCell.m in Sources */,
 				D4A8CB041F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
@@ -591,6 +619,7 @@
 				D47806491F2CD31000CE24E1 /* iCarousel.m in Sources */,
 				D478065C1F2CD46800CE24E1 /* AgendaBookHomeViewController.m in Sources */,
 				D49E438D1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m in Sources */,
+				D4CDFCD61F484D8F00E65F7E /* MGSwipeButton.m in Sources */,
 				D47806551F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m in Sources */,
 				D4CDFCC11F48083800E65F7E /* NotebookHomeViewController.m in Sources */,
 				D47805181F2CBC6E00CE24E1 /* AppDelegate.m in Sources */,
@@ -598,6 +627,7 @@
 				D47805151F2CBC6E00CE24E1 /* main.m in Sources */,
 				D4CDFCC51F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m in Sources */,
 				D4A8CB0F1F310E5900C68812 /* ProfileViewController.m in Sources */,
+				D4CDFCDA1F48500C00E65F7E /* TestData.m in Sources */,
 				D47806711F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.m in Sources */,
 				D47806571F2CD40900CE24E1 /* HTHorizontalSelectionList.m in Sources */,
 				D47806761F2DBFC000CE24E1 /* DLRadioButton.m in Sources */,

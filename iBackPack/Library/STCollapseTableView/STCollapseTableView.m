@@ -209,6 +209,8 @@
 	
 	BOOL sectionIsOpen = [[self.sectionsStates objectAtIndex:sectionIndex] boolValue];
 	
+    [self updatedFolderExpandStateUIWithIsSectionOpen:sectionIsOpen andSectionIndex:sectionIndex];
+    
 	if (sectionIsOpen)
     {
 		[self closeSection:sectionIndex animated:animated];
@@ -271,7 +273,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-	int nbSection = [self.collapseDataSource numberOfSectionsInTableView:tableView];
+	int nbSection = (int)[self.collapseDataSource numberOfSectionsInTableView:tableView];
     
 	while (nbSection < [self.sectionsStates count])
     {
@@ -373,4 +375,30 @@
     return NSNotFound;
 }
 
+- (void) updatedFolderExpandStateUIWithIsSectionOpen:(BOOL)isSectionOpen andSectionIndex:(int)index {
+    
+    int nbSection = (int)[self.collapseDataSource numberOfSectionsInTableView:self];
+    
+    if (isSectionOpen) {
+        for (int i = 0; i<=nbSection; i++) {
+            UIImageView* tmpImageView = (UIImageView *)[self viewWithTag:(100+i)];
+            tmpImageView.image = [UIImage imageNamed:@"ic_circle_plus"];
+        }
+    }
+    else {
+        for (int i = 0; i<=nbSection; i++) {
+            
+            if (i==index) {
+                UIImageView* tmpImageView = (UIImageView *)[self viewWithTag:(100+i)];
+                tmpImageView.image = [UIImage imageNamed:@"ic_circle_minus"];
+            }
+            else {
+                UIImageView* tmpImageView = (UIImageView *)[self viewWithTag:(100+i)];
+                tmpImageView.image = [UIImage imageNamed:@"ic_circle_plus"];
+            }
+            
+        }
+    }
+    
+}
 @end

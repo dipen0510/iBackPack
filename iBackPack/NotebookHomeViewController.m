@@ -9,7 +9,9 @@
 #import "NotebookHomeViewController.h"
 #import "NotebookFoldersCollectionViewCell.h"
 
-@interface NotebookHomeViewController ()
+@interface NotebookHomeViewController () {
+    NSMutableArray * tests;
+}
 
 @end
 
@@ -95,6 +97,8 @@
     [tmpdict5 setObject:@"english_folder" forKey:@"image"];
     [foldersArr addObject:tmpdict5];
     
+    _expandableFoldersTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    tests = [TestData data];
     
 }
 
@@ -204,21 +208,42 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [foldersArr count];
+    return [foldersArr count]-1;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* cellIdentifier = @"cell";
+    static NSString *CellIdentifier = @"MGSwipeTableCell";
+    MGSwipeTableCell *cell = (MGSwipeTableCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    
-    if (!cell)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
+    if (cell == nil) {
+        // Load the top-level objects from the custom cell XIB.
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"NotebookSubFoldersTableViewCell" owner:self options:nil];
+        // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+        cell = [topLevelObjects objectAtIndex:0];
     }
     
-    cell.textLabel.text = @"Dummy Text";
+    TestData * data = [tests objectAtIndex:indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    cell.leftSwipeSettings.transition = data.transition;
+//    cell.rightSwipeSettings.transition = data.transition;
+//    cell.rightExpansion.buttonIndex = data.rightExpandableIndex;
+//    cell.rightExpansion.fillOnTrigger = NO;
+    cell.rightButtons = [self createRightButtons:4];
+    cell.delegate = self;
+    
+    if (indexPath.row == 0) {
+        cell.subfolderTitle.text = @"Discovery and Settlement";
+        cell.subfolderSeparatorView.hidden = NO;
+    }
+    else if (indexPath.row == 1) {
+        cell.subfolderTitle.text = @"English Settlements";
+        cell.subfolderSeparatorView.hidden = NO;
+    }
+    else if (indexPath.row == 2) {
+        cell.subfolderTitle.text = @"Imperial Reorganization";
+        cell.subfolderSeparatorView.hidden = YES;
+    }
     
     return cell;
 }
@@ -241,14 +266,59 @@
     
     UIImageView* expandImgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 17.5, 15, 15)];
     expandImgView.image = [UIImage imageNamed:@"ic_circle_plus"];
+    expandImgView.tag = 100+section;
     
-    UIImageView* folderImgView = [[UIImageView alloc] initWithFrame:CGRectMake(57.5, 17.5, 19, 15)];
-    folderImgView.image = [UIImage imageNamed:[[foldersArr objectAtIndex:section] valueForKey:@"image"]];
+    UIImageView* folderImgView = [[UIImageView alloc] initWithFrame:CGRectMake(52.5, 17.5, 19, 15)];
+    folderImgView.image = [UIImage imageNamed:[[foldersArr objectAtIndex:section+1] valueForKey:@"image"]];
+    
+    UILabel* folderLabel = [[UILabel alloc] initWithFrame:CGRectMake(81.5, 20, 80, 14)];
+    folderLabel.font = [UIFont fontWithName:@"GothamRounded-Medium" size:14.0];
+    folderLabel.text = [[foldersArr objectAtIndex:section+1] valueForKey:@"title"];
+    
+    UIView* separatorView = [[UIView alloc] initWithFrame:CGRectMake(175., 26, header.frame.size.width-175., 1.)];
+    separatorView.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
     
     [header addSubview:expandImgView];
     [header addSubview:folderImgView];
+    [header addSubview:folderLabel];
+    [header addSubview:separatorView];
     
     return header;
 }
+
+-(NSArray *) createRightButtons: (int) number
+{
+    NSMutableArray * result = [NSMutableArray array];
+    NSString* icons[4] = {@"delete_button", @"security", @"share", @"editor"};
+    UIColor * colors[4] = {[UIColor colorWithRed:236./255. green:92./255. blue:92./255. alpha:1.0], [UIColor colorWithRed:246./255. green:178./255. blue:56./255. alpha:1.0], [UIColor colorWithRed:3./255. green:134./255. blue:190./255. alpha:1.0], [UIColor colorWithRed:74./255. green:205./255. blue:116./255. alpha:1.0]};
+    for (int i = 0; i < number; ++i)
+    {
+//        MGSwipeButton * button = [MGSwipeButton buttonWithTitle:titles[i] backgroundColor:colors[i] callback:^BOOL(MGSwipeTableCell * sender){
+//            NSLog(@"Convenience callback received (right).");
+//            BOOL autoHide = i != 0;
+//            return autoHide; //Don't autohide in delete button to improve delete expansion animation
+//        }];
+        MGSwipeButton * button = [MGSwipeButton buttonWithTitle:@"" icon:[UIImage imageNamed:icons[i]] backgroundColor:colors[i] padding:10 callback:^BOOL(MGSwipeTableCell * sender){
+            NSLog(@"Convenience callback received (left).");
+            return YES;
+        }];
+        [result addObject:button];
+    }
+    return result;
+}
+
+-(BOOL) swipeTableCell:(MGSwipeTableCell*) cell tappedButtonAtIndex:(NSInteger) index direction:(MGSwipeDirection)direction fromExpansion:(BOOL) fromExpansion
+{
+    NSLog(@"Delegate: button tapped, %@ position, index %d, from Expansion: %@",
+          direction == MGSwipeDirectionLeftToRight ? @"left" : @"right", (int)index, fromExpansion ? @"YES" : @"NO");
+    
+    if (direction == MGSwipeDirectionRightToLeft && index == 0) {
+        //delete button
+        return NO; //Don't autohide to improve delete expansion animation
+    }
+    
+    return YES;
+}
+
 
 @end
