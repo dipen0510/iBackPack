@@ -8,9 +8,11 @@
 
 #import "NotebookHomeViewController.h"
 #import "NotebookFoldersCollectionViewCell.h"
+#import "NotebookDeleteConfirmationViewController.h"
 
 @interface NotebookHomeViewController () {
     NSMutableArray * tests;
+    NotebookDeleteConfirmationViewController* deleteDialog;
 }
 
 @end
@@ -24,14 +26,23 @@
     [self setupInitialUI];
     [self setupFoldersDatasource];
     [self setupActionSheet];
+    [self setupHorizontalListDatasource];
     
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+-(void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
     
-    [self setupHorizontalListDatasource];
+    _expandableFoldersTableView.delegate = self;
+    
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    _expandableFoldersTableView.delegate = nil;
     
 }
 
@@ -98,7 +109,6 @@
     [foldersArr addObject:tmpdict5];
     
     _expandableFoldersTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    tests = [TestData data];
     
 }
 
@@ -223,7 +233,6 @@
         cell = [topLevelObjects objectAtIndex:0];
     }
     
-    TestData * data = [tests objectAtIndex:indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 //    cell.leftSwipeSettings.transition = data.transition;
 //    cell.rightSwipeSettings.transition = data.transition;
@@ -314,11 +323,46 @@
     
     if (direction == MGSwipeDirectionRightToLeft && index == 0) {
         //delete button
+        [self showDeleteConfirmationDialog];
         return NO; //Don't autohide to improve delete expansion animation
+    }
+    else if (direction == MGSwipeDirectionRightToLeft && index == 1) {
+        //Shield button
+        [self showNotificationPermissionController];
     }
     
     return YES;
 }
 
+#pragma mark - Notification Permission Helpers
+
+- (void) showNotificationPermissionController {
+    
+    [self performSegueWithIdentifier:@"showNotebookPermissionSegue" sender:nil];
+    
+}
+
+#pragma mark - Delete Confirmation Dialog Helpers
+
+- (void) showDeleteConfirmationDialog {
+    
+    UIStoryboard *npsStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    deleteDialog = (NotebookDeleteConfirmationViewController*)[npsStoryboard instantiateViewControllerWithIdentifier:@"NotebookDeleteConfirmationViewController"];
+    deleteDialog.view.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight) ;
+    
+    [deleteDialog.deleteButton addTarget:self action:@selector(deleteDialogDeleteButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [deleteDialog.cancelButton addTarget:self action:@selector(deleteDialogCancelButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:deleteDialog.view];
+    
+}
+
+- (void) deleteDialogDeleteButtonTapped:(id)sender {
+    [deleteDialog.view removeFromSuperview];
+}
+
+- (void) deleteDialogCancelButtonTapped:(id)sender {
+    [deleteDialog.view removeFromSuperview];
+}
 
 @end
