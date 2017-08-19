@@ -49,6 +49,9 @@
 		D4A8CB081F3075DD00C68812 /* AgendaBookAddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB071F3075DD00C68812 /* AgendaBookAddNewViewController.m */; };
 		D4A8CB0F1F310E5900C68812 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB0E1F310E5900C68812 /* ProfileViewController.m */; };
 		D4A8CB131F31131000C68812 /* LibraryHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A8CB121F31131000C68812 /* LibraryHomeViewController.m */; };
+		D4CDFCC11F48083800E65F7E /* NotebookHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCC01F48083800E65F7E /* NotebookHomeViewController.m */; };
+		D4CDFCC51F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCC41F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m */; };
+		D4CDFCC91F4818C600E65F7E /* STCollapseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCC81F4818C600E65F7E /* STCollapseTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +143,12 @@
 		D4A8CB0E1F310E5900C68812 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		D4A8CB111F31131000C68812 /* LibraryHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHomeViewController.h; sourceTree = "<group>"; };
 		D4A8CB121F31131000C68812 /* LibraryHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHomeViewController.m; sourceTree = "<group>"; };
+		D4CDFCBF1F48083800E65F7E /* NotebookHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookHomeViewController.h; sourceTree = "<group>"; };
+		D4CDFCC01F48083800E65F7E /* NotebookHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookHomeViewController.m; sourceTree = "<group>"; };
+		D4CDFCC31F480E0300E65F7E /* NotebookFoldersCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookFoldersCollectionViewCell.h; sourceTree = "<group>"; };
+		D4CDFCC41F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookFoldersCollectionViewCell.m; sourceTree = "<group>"; };
+		D4CDFCC71F4818C600E65F7E /* STCollapseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollapseTableView.h; sourceTree = "<group>"; };
+		D4CDFCC81F4818C600E65F7E /* STCollapseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollapseTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,9 +199,10 @@
 		D47805121F2CBC6E00CE24E1 /* iBackPack */ = {
 			isa = PBXGroup;
 			children = (
+				D4CDFCBE1F48082300E65F7E /* Notebook */,
 				D4A8CB101F31130200C68812 /* Library */,
 				D47806591F2CD45400CE24E1 /* AgendaBook */,
-				D47806401F2CD1EC00CE24E1 /* Library */,
+				D47806401F2CD1EC00CE24E1 /* Custom Controls */,
 				D47805C31F2CC0BE00CE24E1 /* Resources */,
 				D47805161F2CBC6E00CE24E1 /* AppDelegate.h */,
 				D47805171F2CBC6E00CE24E1 /* AppDelegate.m */,
@@ -247,9 +257,10 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D47806401F2CD1EC00CE24E1 /* Library */ = {
+		D47806401F2CD1EC00CE24E1 /* Custom Controls */ = {
 			isa = PBXGroup;
 			children = (
+				D4CDFCC61F4818C600E65F7E /* STCollapseTableView */,
 				D4A8CAFF1F304F0300C68812 /* FloatingTextField */,
 				D47806731F2DBFC000CE24E1 /* DLRadioButton */,
 				D478065F1F2CD8FF00CE24E1 /* M13BadgeView */,
@@ -257,6 +268,7 @@
 				D47806451F2CD31000CE24E1 /* iCarousel */,
 				D47806411F2CD1EC00CE24E1 /* SwipViewController */,
 			);
+			name = "Custom Controls";
 			path = Library;
 			sourceTree = "<group>";
 		};
@@ -389,6 +401,34 @@
 				D49E43791F3AE1830077DE84 /* LibraryHomeDetailViewController.m */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		D4CDFCBE1F48082300E65F7E /* Notebook */ = {
+			isa = PBXGroup;
+			children = (
+				D4CDFCC21F480DE100E65F7E /* Cells */,
+				D4CDFCBF1F48083800E65F7E /* NotebookHomeViewController.h */,
+				D4CDFCC01F48083800E65F7E /* NotebookHomeViewController.m */,
+			);
+			name = Notebook;
+			sourceTree = "<group>";
+		};
+		D4CDFCC21F480DE100E65F7E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D4CDFCC31F480E0300E65F7E /* NotebookFoldersCollectionViewCell.h */,
+				D4CDFCC41F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D4CDFCC61F4818C600E65F7E /* STCollapseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D4CDFCC71F4818C600E65F7E /* STCollapseTableView.h */,
+				D4CDFCC81F4818C600E65F7E /* STCollapseTableView.m */,
+			);
+			path = STCollapseTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,13 +592,16 @@
 				D478065C1F2CD46800CE24E1 /* AgendaBookHomeViewController.m in Sources */,
 				D49E438D1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m in Sources */,
 				D47806551F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m in Sources */,
+				D4CDFCC11F48083800E65F7E /* NotebookHomeViewController.m in Sources */,
 				D47805181F2CBC6E00CE24E1 /* AppDelegate.m in Sources */,
 				D47806561F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m in Sources */,
 				D47805151F2CBC6E00CE24E1 /* main.m in Sources */,
+				D4CDFCC51F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m in Sources */,
 				D4A8CB0F1F310E5900C68812 /* ProfileViewController.m in Sources */,
 				D47806711F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.m in Sources */,
 				D47806571F2CD40900CE24E1 /* HTHorizontalSelectionList.m in Sources */,
 				D47806761F2DBFC000CE24E1 /* DLRadioButton.m in Sources */,
+				D4CDFCC91F4818C600E65F7E /* STCollapseTableView.m in Sources */,
 				D47806621F2CD8FF00CE24E1 /* M13BadgeView.m in Sources */,
 				D49E437A1F3AE1830077DE84 /* LibraryHomeDetailViewController.m in Sources */,
 				D47806441F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m in Sources */,

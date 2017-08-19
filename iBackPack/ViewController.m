@@ -37,6 +37,9 @@
     [_libraryView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(libraryTapped)]];
     _libraryView.userInteractionEnabled = YES;
     
+    [_notebookView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(notebookTapped)]];
+    _notebookView.userInteractionEnabled = YES;
+    
 }
 
 - (void) agendaBookTapped {
@@ -51,6 +54,11 @@
     
 }
 
+- (void) notebookTapped {
+    
+    [self performSegueWithIdentifier:@"showNotebookSegue" sender:nil];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
