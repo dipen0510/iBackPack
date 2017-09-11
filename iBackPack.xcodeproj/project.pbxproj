@@ -61,6 +61,9 @@
 		D4CDFCE81F48871600E65F7E /* NotebookPermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCE71F48871600E65F7E /* NotebookPermissionsViewController.m */; };
 		D4CDFCEC1F4888A100E65F7E /* NotebookPermissionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CDFCEA1F4888A100E65F7E /* NotebookPermissionsTableViewCell.m */; };
 		D4CDFCED1F4888A100E65F7E /* NotebookPermissionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4CDFCEB1F4888A100E65F7E /* NotebookPermissionsTableViewCell.xib */; };
+		D4F6A74C1F665A4C004C8BE7 /* SettingsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F6A74B1F665A4C004C8BE7 /* SettingsHomeViewController.m */; };
+		D4F6A7511F665C38004C8BE7 /* SettingsHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F6A74F1F665C38004C8BE7 /* SettingsHomeTableViewCell.m */; };
+		D4F6A7521F665C38004C8BE7 /* SettingsHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4F6A7501F665C38004C8BE7 /* SettingsHomeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +177,11 @@
 		D4CDFCE91F4888A100E65F7E /* NotebookPermissionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookPermissionsTableViewCell.h; sourceTree = "<group>"; };
 		D4CDFCEA1F4888A100E65F7E /* NotebookPermissionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookPermissionsTableViewCell.m; sourceTree = "<group>"; };
 		D4CDFCEB1F4888A100E65F7E /* NotebookPermissionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotebookPermissionsTableViewCell.xib; sourceTree = "<group>"; };
+		D4F6A74A1F665A4C004C8BE7 /* SettingsHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsHomeViewController.h; sourceTree = "<group>"; };
+		D4F6A74B1F665A4C004C8BE7 /* SettingsHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsHomeViewController.m; sourceTree = "<group>"; };
+		D4F6A74E1F665C38004C8BE7 /* SettingsHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsHomeTableViewCell.h; sourceTree = "<group>"; };
+		D4F6A74F1F665C38004C8BE7 /* SettingsHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsHomeTableViewCell.m; sourceTree = "<group>"; };
+		D4F6A7501F665C38004C8BE7 /* SettingsHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsHomeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +232,7 @@
 		D47805121F2CBC6E00CE24E1 /* iBackPack */ = {
 			isa = PBXGroup;
 			children = (
+				D4F6A7491F665A34004C8BE7 /* Settings */,
 				D4CDFCBE1F48082300E65F7E /* Notebook */,
 				D4A8CB101F31130200C68812 /* Library */,
 				D47806591F2CD45400CE24E1 /* AgendaBook */,
@@ -488,6 +497,26 @@
 			path = FreeLine;
 			sourceTree = "<group>";
 		};
+		D4F6A7491F665A34004C8BE7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D4F6A74D1F665C1C004C8BE7 /* Cells */,
+				D4F6A74A1F665A4C004C8BE7 /* SettingsHomeViewController.h */,
+				D4F6A74B1F665A4C004C8BE7 /* SettingsHomeViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		D4F6A74D1F665C1C004C8BE7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D4F6A74E1F665C38004C8BE7 /* SettingsHomeTableViewCell.h */,
+				D4F6A74F1F665C38004C8BE7 /* SettingsHomeTableViewCell.m */,
+				D4F6A7501F665C38004C8BE7 /* SettingsHomeTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -600,6 +629,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D478066D1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib in Resources */,
+				D4F6A7521F665C38004C8BE7 /* SettingsHomeTableViewCell.xib in Resources */,
 				D49E43841F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib in Resources */,
 				D49E437F1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib in Resources */,
 				D4CDFCCE1F4848FD00E65F7E /* NotebookSubFoldersTableViewCell.xib in Resources */,
@@ -667,9 +697,11 @@
 				D47806711F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.m in Sources */,
 				D47806571F2CD40900CE24E1 /* HTHorizontalSelectionList.m in Sources */,
 				D47806761F2DBFC000CE24E1 /* DLRadioButton.m in Sources */,
+				D4F6A74C1F665A4C004C8BE7 /* SettingsHomeViewController.m in Sources */,
 				D4CDFCC91F4818C600E65F7E /* STCollapseTableView.m in Sources */,
 				D47806621F2CD8FF00CE24E1 /* M13BadgeView.m in Sources */,
 				D49E437A1F3AE1830077DE84 /* LibraryHomeDetailViewController.m in Sources */,
+				D4F6A7511F665C38004C8BE7 /* SettingsHomeTableViewCell.m in Sources */,
 				D47806441F2CD1F700CE24E1 /* RKSwipeBetweenViewControllers.m in Sources */,
 				D49E43881F3B369C0077DE84 /* LibraryChatTableViewCell.m in Sources */,
 				D4A8CB031F304F0300C68812 /* SkyFloatingLabelTextField.swift in Sources */,

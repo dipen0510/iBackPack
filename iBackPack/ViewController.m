@@ -40,6 +40,12 @@
     [_notebookView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(notebookTapped)]];
     _notebookView.userInteractionEnabled = YES;
     
+    [_flashCardsView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(notebookTapped)]];
+    _flashCardsView.userInteractionEnabled = YES;
+    
+    [_settingsView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(settingsTapped)]];
+    _settingsView.userInteractionEnabled = YES;
+    
 }
 
 - (void) agendaBookTapped {
@@ -57,6 +63,12 @@
 - (void) notebookTapped {
     
     [self performSegueWithIdentifier:@"showNotebookSegue" sender:nil];
+    
+}
+
+- (void) settingsTapped {
+    
+    [self performSegueWithIdentifier:@"showSettingsSegue" sender:nil];
     
 }
 
