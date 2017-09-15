@@ -15,6 +15,7 @@
     
     NSMutableArray *footerItems;
     NSMutableArray *headerItems;
+    NSMutableArray *graphItems;
     NSMutableArray *foldersArr;
     
     BOOL isSkillsDuelSubView;
@@ -31,9 +32,11 @@
 @property (weak, nonatomic) IBOutlet UITableView *skillsTableView;
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 @property (weak, nonatomic) IBOutlet STCollapseTableView *skillsCollapseTableView;
+@property (weak, nonatomic) IBOutlet UIImageView *chartsImgView;
 
 @property (strong, nonatomic) IBOutlet HTHorizontalSelectionList *footerSelectionList;
 @property (strong, nonatomic) IBOutlet GoSegmentedControl *headerSelectionList;
+@property (strong, nonatomic) IBOutlet GoSegmentedControl *graphSelectionList;
 
 - (IBAction)homeButtonTapped:(id)sender;
 

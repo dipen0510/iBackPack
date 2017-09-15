@@ -57,6 +57,7 @@
     
     _skillsTableView.hidden = YES;
     _skillsCollapseTableView.hidden = YES;
+    _chartsImgView.hidden = YES;
     
 }
 
@@ -95,6 +96,22 @@
     [self.view addSubview:_headerSelectionList];
     
     _headerSelectionList.hidden = YES;
+    
+    
+    //GRAPH LIST
+    
+    self.graphSelectionList = [[GoSegmentedControl alloc] initWithFrame:CGRectMake(0, _chartsImgView.frame.origin.y + _chartsImgView.frame.size.height + 40., self.view.frame.size.width, 40)];
+    _graphSelectionList.delegate = self;
+    _graphSelectionList.dataSource = self;
+    _graphSelectionList.selectionIndicatorColor = [UIColor colorWithRed:3./255. green:134./255. blue:190./255. alpha:1.0];
+    _graphSelectionList.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    _graphSelectionList.indicatorAnimationDuration = 0.2;
+    
+    graphItems = [[NSMutableArray alloc] initWithObjects:@"Days",@"Week",@"Month",@"Year",nil];
+    [self.view addSubview:_graphSelectionList];
+    
+    _headerSelectionList.hidden = YES;
+    _graphSelectionList.hidden = YES;
     
 }
 
@@ -204,7 +221,9 @@
             _skillsTableView.hidden = YES;
             _skillsCollapseTableView.hidden = YES;
             _headerSelectionList.hidden = YES;
+            _graphSelectionList.hidden = YES;
             _headerLabel.text = @"Skills";
+            _chartsImgView.hidden = YES;
             break;
             
         case 1:
@@ -215,10 +234,12 @@
             _skillsTableView.hidden = NO;
             _skillsCollapseTableView.hidden = YES;
             _headerSelectionList.hidden = NO;
+            _graphSelectionList.hidden = YES;
             _headerLabel.text = @"Duel";
             [_skillsTableView reloadData];
             headerItems = [[NSMutableArray alloc] initWithObjects:@"Quiz",@"Fill in the blanks",nil];
             [_headerSelectionList reloadData];
+            _chartsImgView.hidden = YES;
             break;
             
         case 2:
@@ -229,10 +250,26 @@
             _skillsTableView.hidden = YES;
             _skillsCollapseTableView.hidden = NO;
             _headerSelectionList.hidden = NO;
+            _graphSelectionList.hidden = YES;
             _headerLabel.text = @"Result";
             [_skillsCollapseTableView reloadData];
             headerItems = [[NSMutableArray alloc] initWithObjects:@"Skill Test",@"Duel",nil];
             [_headerSelectionList reloadData];
+            _chartsImgView.hidden = YES;
+            break;
+            
+        case 3:
+            isSkillsDuelSubView = NO;
+            _assessmentView.hidden = YES;
+            _studyGuideView.hidden = YES;
+            _fillInBlanksView.hidden = YES;
+            _skillsTableView.hidden = YES;
+            _skillsCollapseTableView.hidden = YES;
+            _headerSelectionList.hidden = YES;
+            _graphSelectionList.hidden = NO;
+            [_graphSelectionList reloadData];
+            _headerLabel.text = @"Analytics";
+            _chartsImgView.hidden = NO;
             break;
             
         default:
@@ -244,10 +281,25 @@
 #pragma mark - GoSegment Datasource
 
 - (NSInteger)numberOfSegmentsInGoSegmentedControl:(GoSegmentedControl *)segmentedControl{
+    
+    if (segmentedControl == _graphSelectionList) {
+        return graphItems.count;
+    }
+    
     return headerItems.count;
 }
 
 - (UIView *)segmentedControl:(GoSegmentedControl *)segmentedControl customSegmentViewAtIndex:(NSInteger)index{
+    
+    if (segmentedControl == _graphSelectionList) {
+        UILabel *label = [UILabel new];
+        [label setText:[graphItems objectAtIndex:index]];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.font = [UIFont fontWithName:@"GothamRounded-Medium" size:12.0];
+        label.textColor = [UIColor blackColor];
+        return label;
+    }
+    
     UILabel *label = [UILabel new];
     [label setText:[headerItems objectAtIndex:index]];
     label.textAlignment = NSTextAlignmentCenter;
@@ -259,44 +311,57 @@
 #pragma mark - GoSegment Delegate
 
 - (CGFloat)segmentedControl:(GoSegmentedControl *)segmentedControl widthForSegmentAtIndex:(NSInteger)index{
+    
+    if (segmentedControl == _graphSelectionList) {
+        return [UIScreen mainScreen].bounds.size.width/graphItems.count;
+    }
+    
     return [UIScreen mainScreen].bounds.size.width/headerItems.count;
 }
 
 - (void)segmentedControl:(GoSegmentedControl *)segmentedControl willMoveToIndex:(NSInteger)index {
     
-    if (_footerSelectionList.selectedButtonIndex == 2) {
-        
-        if (index == 1) {
-            isSkillsDuelSubView = NO;
-            _assessmentView.hidden = YES;
-            _studyGuideView.hidden = YES;
-            _fillInBlanksView.hidden = YES;
-            _skillsTableView.hidden = NO;
-            _skillsCollapseTableView.hidden = YES;
-            _headerSelectionList.hidden = NO;
-            _headerLabel.text = @"Result";
-            [_skillsTableView reloadData];
-            headerItems = [[NSMutableArray alloc] initWithObjects:@"Skill Test",@"Duel",nil];
-            [_headerSelectionList reloadData];
-        }
-        else {
+    
+    if (segmentedControl != _graphSelectionList) {
+        if (_footerSelectionList.selectedButtonIndex == 2) {
             
-            isSkillsDuelSubView = NO;
-            _assessmentView.hidden = YES;
-            _studyGuideView.hidden = YES;
-            _fillInBlanksView.hidden = YES;
-            _skillsTableView.hidden = YES;
-            _skillsCollapseTableView.hidden = NO;
-            _headerSelectionList.hidden = NO;
-            _headerLabel.text = @"Result";
-            [_skillsCollapseTableView reloadData];
-            headerItems = [[NSMutableArray alloc] initWithObjects:@"Skill Test",@"Duel",nil];
-            [_headerSelectionList reloadData];
+            if (index == 1) {
+                isSkillsDuelSubView = NO;
+                _assessmentView.hidden = YES;
+                _studyGuideView.hidden = YES;
+                _fillInBlanksView.hidden = YES;
+                _skillsTableView.hidden = NO;
+                _skillsCollapseTableView.hidden = YES;
+                _headerSelectionList.hidden = NO;
+                _graphSelectionList.hidden = YES;
+                _headerLabel.text = @"Result";
+                [_skillsTableView reloadData];
+                headerItems = [[NSMutableArray alloc] initWithObjects:@"Skill Test",@"Duel",nil];
+                [_headerSelectionList reloadData];
+                _chartsImgView.hidden = YES;
+            }
+            else {
+                
+                isSkillsDuelSubView = NO;
+                _assessmentView.hidden = YES;
+                _studyGuideView.hidden = YES;
+                _fillInBlanksView.hidden = YES;
+                _skillsTableView.hidden = YES;
+                _skillsCollapseTableView.hidden = NO;
+                _headerSelectionList.hidden = NO;
+                _graphSelectionList.hidden = YES;
+                _headerLabel.text = @"Result";
+                [_skillsCollapseTableView reloadData];
+                headerItems = [[NSMutableArray alloc] initWithObjects:@"Skill Test",@"Duel",nil];
+                [_headerSelectionList reloadData];
+                _chartsImgView.hidden = YES;
+                
+            }
+            
             
         }
-        
-        
     }
+
     
 }
 
