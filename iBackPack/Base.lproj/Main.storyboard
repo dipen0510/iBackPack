@@ -1635,23 +1635,47 @@
                                     <constraint firstItem="WuN-qu-phR" firstAttribute="centerY" secondItem="S7u-mb-nqz" secondAttribute="centerY" id="waw-Xr-li9"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="II4-Mt-1DD">
+                                <rect key="frame" x="0.0" y="127" width="375" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="O5M-9C-X8f" id="jo4-Eb-Z5N"/>
+                                    <outlet property="delegate" destination="O5M-9C-X8f" id="LII-lx-vpq"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rxp-r6-h1R" customClass="STCollapseTableView">
+                                <rect key="frame" x="0.0" y="127" width="375" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="O5M-9C-X8f" id="8lE-Ol-35G"/>
+                                    <outlet property="delegate" destination="O5M-9C-X8f" id="0Zr-k4-MRs"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1Je-Z6-NiI" firstAttribute="width" secondItem="d9g-ej-b5L" secondAttribute="width" id="02h-cO-i9H"/>
+                            <constraint firstItem="rxp-r6-h1R" firstAttribute="bottom" secondItem="II4-Mt-1DD" secondAttribute="bottom" id="2sk-ch-bwH"/>
                             <constraint firstItem="FFj-U4-WkX" firstAttribute="top" secondItem="gmp-wJ-uX7" secondAttribute="top" id="6yB-7V-d1S"/>
+                            <constraint firstItem="II4-Mt-1DD" firstAttribute="leading" secondItem="gmp-wJ-uX7" secondAttribute="leading" id="DOV-F5-kiM"/>
                             <constraint firstAttribute="trailing" secondItem="d9g-ej-b5L" secondAttribute="trailing" constant="16" id="HI9-m2-POd"/>
                             <constraint firstItem="S7u-mb-nqz" firstAttribute="width" secondItem="d9g-ej-b5L" secondAttribute="width" id="ItZ-FS-VO5"/>
                             <constraint firstItem="1Je-Z6-NiI" firstAttribute="height" secondItem="d9g-ej-b5L" secondAttribute="height" id="KXC-hN-QVo"/>
+                            <constraint firstItem="rxp-r6-h1R" firstAttribute="leading" secondItem="II4-Mt-1DD" secondAttribute="leading" id="L49-Nm-W5o"/>
                             <constraint firstItem="d9g-ej-b5L" firstAttribute="leading" secondItem="gmp-wJ-uX7" secondAttribute="leading" constant="16" id="LTr-uD-CTf"/>
                             <constraint firstItem="1Je-Z6-NiI" firstAttribute="top" secondItem="d9g-ej-b5L" secondAttribute="bottom" constant="32" id="QFr-0M-K2e"/>
                             <constraint firstAttribute="trailing" secondItem="FFj-U4-WkX" secondAttribute="trailing" id="RWi-Ok-9rL"/>
                             <constraint firstItem="S7u-mb-nqz" firstAttribute="top" secondItem="1Je-Z6-NiI" secondAttribute="bottom" constant="32" id="Ty4-6H-tQl"/>
                             <constraint firstItem="1Je-Z6-NiI" firstAttribute="leading" secondItem="d9g-ej-b5L" secondAttribute="leading" id="VXX-aI-fwP"/>
                             <constraint firstItem="d9g-ej-b5L" firstAttribute="top" secondItem="FFj-U4-WkX" secondAttribute="bottom" constant="61" id="Zex-6v-pM8"/>
+                            <constraint firstAttribute="trailing" secondItem="II4-Mt-1DD" secondAttribute="trailing" id="a6n-gt-ACO"/>
+                            <constraint firstItem="TwF-nj-Cos" firstAttribute="top" secondItem="II4-Mt-1DD" secondAttribute="bottom" constant="40" id="fhL-oO-Um6"/>
+                            <constraint firstItem="rxp-r6-h1R" firstAttribute="top" secondItem="II4-Mt-1DD" secondAttribute="top" id="hgc-UG-57p"/>
                             <constraint firstItem="S7u-mb-nqz" firstAttribute="leading" secondItem="d9g-ej-b5L" secondAttribute="leading" id="ksl-wd-K5y"/>
                             <constraint firstItem="S7u-mb-nqz" firstAttribute="height" secondItem="d9g-ej-b5L" secondAttribute="height" id="lIj-Kc-cSm"/>
                             <constraint firstItem="TwF-nj-Cos" firstAttribute="top" secondItem="S7u-mb-nqz" secondAttribute="bottom" constant="129" id="nvW-23-8FM"/>
+                            <constraint firstItem="II4-Mt-1DD" firstAttribute="top" secondItem="FFj-U4-WkX" secondAttribute="bottom" constant="40" id="o6L-Mx-H8M"/>
+                            <constraint firstItem="rxp-r6-h1R" firstAttribute="trailing" secondItem="II4-Mt-1DD" secondAttribute="trailing" id="rTt-5D-ii1"/>
                             <constraint firstItem="FFj-U4-WkX" firstAttribute="leading" secondItem="gmp-wJ-uX7" secondAttribute="leading" id="tjU-7o-5dQ"/>
                         </constraints>
                     </view>
@@ -1660,6 +1684,10 @@
                         <outlet property="assessmentView" destination="1Je-Z6-NiI" id="rNR-BS-gMd"/>
                         <outlet property="fillInBlanksSubview" destination="AXJ-SI-fV9" id="2hY-fE-Dag"/>
                         <outlet property="fillInBlanksView" destination="S7u-mb-nqz" id="xFn-Nt-1Nx"/>
+                        <outlet property="headerLabel" destination="RQz-Om-9PI" id="MgS-gr-c8j"/>
+                        <outlet property="headerView" destination="FFj-U4-WkX" id="IRV-tG-UnF"/>
+                        <outlet property="skillsCollapseTableView" destination="rxp-r6-h1R" id="yPB-WE-mMR"/>
+                        <outlet property="skillsTableView" destination="II4-Mt-1DD" id="avu-0B-4TS"/>
                         <outlet property="studyGuideSubVew" destination="ve0-cn-gyI" id="aUp-dj-LcH"/>
                         <outlet property="studyGuideView" destination="d9g-ej-b5L" id="o9k-ae-gvR"/>
                         <segue destination="bbJ-bE-Kfe" kind="show" identifier="showCreateGuideSegue" id="cLZ-Yg-otI"/>
@@ -2408,7 +2436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDR-fE-gdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2081" y="1290"/>
+            <point key="canvasLocation" x="1990" y="-2356"/>
         </scene>
     </scenes>
     <resources>

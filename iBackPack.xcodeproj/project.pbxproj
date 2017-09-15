@@ -12,6 +12,15 @@
 		D42356791F6C122800BC0567 /* SkillsAssessmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42356781F6C122800BC0567 /* SkillsAssessmentViewController.m */; };
 		D423567D1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D423567B1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m */; };
 		D423567E1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D423567C1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib */; };
+		D42356881F6C260100BC0567 /* GoSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D42356821F6C260100BC0567 /* GoSegmentedControl.m */; };
+		D42356901F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D423568E1F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.m */; };
+		D42356911F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D423568F1F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.xib */; };
+		D42356951F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D42356931F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.m */; };
+		D42356961F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D42356941F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.xib */; };
+		D423569A1F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D42356981F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.m */; };
+		D423569B1F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D42356991F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.xib */; };
+		D423569F1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D423569D1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.m */; };
+		D42356A01F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D423569E1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.xib */; };
 		D47805151F2CBC6E00CE24E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D47805141F2CBC6E00CE24E1 /* main.m */; };
 		D47805181F2CBC6E00CE24E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D47805171F2CBC6E00CE24E1 /* AppDelegate.m */; };
 		D478051B1F2CBC6E00CE24E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D478051A1F2CBC6E00CE24E1 /* ViewController.m */; };
@@ -100,6 +109,20 @@
 		D423567A1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsAssessmentTableViewCell.h; sourceTree = "<group>"; };
 		D423567B1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsAssessmentTableViewCell.m; sourceTree = "<group>"; };
 		D423567C1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsAssessmentTableViewCell.xib; sourceTree = "<group>"; };
+		D42356811F6C260100BC0567 /* GoSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSegmentedControl.h; sourceTree = "<group>"; };
+		D42356821F6C260100BC0567 /* GoSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoSegmentedControl.m; sourceTree = "<group>"; };
+		D423568D1F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsHomeDuelTableViewCell.h; sourceTree = "<group>"; };
+		D423568E1F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsHomeDuelTableViewCell.m; sourceTree = "<group>"; };
+		D423568F1F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsHomeDuelTableViewCell.xib; sourceTree = "<group>"; };
+		D42356921F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsHomeDuelSubTableViewCell.h; sourceTree = "<group>"; };
+		D42356931F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsHomeDuelSubTableViewCell.m; sourceTree = "<group>"; };
+		D42356941F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsHomeDuelSubTableViewCell.xib; sourceTree = "<group>"; };
+		D42356971F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsHomeTestResultTableViewCell.h; sourceTree = "<group>"; };
+		D42356981F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsHomeTestResultTableViewCell.m; sourceTree = "<group>"; };
+		D42356991F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsHomeTestResultTableViewCell.xib; sourceTree = "<group>"; };
+		D423569C1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsHomeDuelResultTableViewCell.h; sourceTree = "<group>"; };
+		D423569D1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsHomeDuelResultTableViewCell.m; sourceTree = "<group>"; };
+		D423569E1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsHomeDuelResultTableViewCell.xib; sourceTree = "<group>"; };
 		D47805101F2CBC6E00CE24E1 /* iBackPack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBackPack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47805141F2CBC6E00CE24E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D47805161F2CBC6E00CE24E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -240,8 +263,37 @@
 				D423567A1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.h */,
 				D423567B1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m */,
 				D423567C1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib */,
+				D423568D1F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.h */,
+				D423568E1F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.m */,
+				D423568F1F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.xib */,
+				D42356921F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.h */,
+				D42356931F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.m */,
+				D42356941F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.xib */,
+				D42356971F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.h */,
+				D42356981F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.m */,
+				D42356991F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.xib */,
+				D423569C1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.h */,
+				D423569D1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.m */,
+				D423569E1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		D423567F1F6C260100BC0567 /* GoSegmentedControl-master */ = {
+			isa = PBXGroup;
+			children = (
+				D42356801F6C260100BC0567 /* Classes */,
+			);
+			path = "GoSegmentedControl-master";
+			sourceTree = "<group>";
+		};
+		D42356801F6C260100BC0567 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D42356811F6C260100BC0567 /* GoSegmentedControl.h */,
+				D42356821F6C260100BC0567 /* GoSegmentedControl.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		D47805071F2CBC6E00CE24E1 = {
@@ -330,6 +382,7 @@
 		D47806401F2CD1EC00CE24E1 /* Custom Controls */ = {
 			isa = PBXGroup;
 			children = (
+				D423567F1F6C260100BC0567 /* GoSegmentedControl-master */,
 				D4CDFCE21F48851900E65F7E /* FreeLine */,
 				D4CDFCCF1F484D8F00E65F7E /* MGSwipeTableCell */,
 				D4CDFCC61F4818C600E65F7E /* STCollapseTableView */,
@@ -682,6 +735,7 @@
 			files = (
 				D478066D1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.xib in Resources */,
 				D4F6A7521F665C38004C8BE7 /* SettingsHomeTableViewCell.xib in Resources */,
+				D42356A01F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.xib in Resources */,
 				D49E43841F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib in Resources */,
 				D49E437F1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib in Resources */,
 				D4CDFCCE1F4848FD00E65F7E /* NotebookSubFoldersTableViewCell.xib in Resources */,
@@ -696,8 +750,11 @@
 				D47806121F2CC0BE00CE24E1 /* GothamRnd-Medium.otf in Resources */,
 				D47806111F2CC0BE00CE24E1 /* GothamRnd-Book.otf in Resources */,
 				D49E438E1F3B38B50077DE84 /* LibraryDownloadTableViewCell.xib in Resources */,
+				D42356911F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.xib in Resources */,
+				D423569B1F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.xib in Resources */,
 				D47806101F2CC0BE00CE24E1 /* GothamRnd-Bold.otf in Resources */,
 				D478064A1F2CD31000CE24E1 /* Info.plist in Resources */,
+				D42356961F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.xib in Resources */,
 				D47806721F2DBD5200CE24E1 /* AgendaBookHomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,6 +780,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D423569A1F6C50F600BC0567 /* SkillsHomeTestResultTableViewCell.m in Sources */,
 				D4CDFCE81F48871600E65F7E /* NotebookPermissionsViewController.m in Sources */,
 				D42356751F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.m in Sources */,
 				D478051B1F2CBC6E00CE24E1 /* ViewController.m in Sources */,
@@ -733,6 +791,7 @@
 				D4CDFCD71F484D8F00E65F7E /* MGSwipeTableCell.m in Sources */,
 				D423567D1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m in Sources */,
 				D49E43831F3B1EF80077DE84 /* LibrarySearchTableViewCell.m in Sources */,
+				D42356951F6C3D3D00BC0567 /* SkillsHomeDuelSubTableViewCell.m in Sources */,
 				D496B6631F376A05002ECDA8 /* LibraryHomeTableViewCell.m in Sources */,
 				D4A8CB041F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
 				D4F6A7561F6735A3004C8BE7 /* SkillsHomeViewController.m in Sources */,
@@ -741,6 +800,7 @@
 				D4A8CB081F3075DD00C68812 /* AgendaBookAddNewViewController.m in Sources */,
 				D47806491F2CD31000CE24E1 /* iCarousel.m in Sources */,
 				D478065C1F2CD46800CE24E1 /* AgendaBookHomeViewController.m in Sources */,
+				D42356881F6C260100BC0567 /* GoSegmentedControl.m in Sources */,
 				D49E438D1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m in Sources */,
 				D42356791F6C122800BC0567 /* SkillsAssessmentViewController.m in Sources */,
 				D4CDFCD61F484D8F00E65F7E /* MGSwipeButton.m in Sources */,
@@ -749,6 +809,7 @@
 				D4CDFCE01F48831800E65F7E /* NotebookAddNewNoteViewController.m in Sources */,
 				D4CDFCC11F48083800E65F7E /* NotebookHomeViewController.m in Sources */,
 				D47805181F2CBC6E00CE24E1 /* AppDelegate.m in Sources */,
+				D423569F1F6C58F900BC0567 /* SkillsHomeDuelResultTableViewCell.m in Sources */,
 				D47806561F2CD40900CE24E1 /* HTHorizontalSelectionListLabelCell.m in Sources */,
 				D47805151F2CBC6E00CE24E1 /* main.m in Sources */,
 				D4CDFCC51F480E0300E65F7E /* NotebookFoldersCollectionViewCell.m in Sources */,
@@ -766,6 +827,7 @@
 				D4A8CB031F304F0300C68812 /* SkyFloatingLabelTextField.swift in Sources */,
 				D478066C1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m in Sources */,
 				D4F6A7591F6829C4004C8BE7 /* SkillsStudyGuideOptionViewController.m in Sources */,
+				D42356901F6C2B1E00BC0567 /* SkillsHomeDuelTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
