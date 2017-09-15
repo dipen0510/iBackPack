@@ -103,6 +103,7 @@
         
         view = [[UIView alloc] initWithFrame:_carouselView.frame];
         view.contentMode = UIViewContentModeCenter;
+        agendaBookCellView.view.center = CGPointMake(view.center.x, agendaBookCellView.view.center.y);
         [view addSubview:agendaBookCellView.view];
     
         

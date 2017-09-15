@@ -33,9 +33,19 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+-(void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    
+    _skillsCollapseTableView.delegate = self;
+    
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    _skillsCollapseTableView.delegate = nil;
     
 }
 
@@ -170,6 +180,8 @@
 }
 
 - (void) drawCornerRadiusOnSubView:(UIView *)subview {
+    
+    [subview layoutIfNeeded];
     
     UIBezierPath *maskPath = [UIBezierPath
                               bezierPathWithRoundedRect:subview.bounds

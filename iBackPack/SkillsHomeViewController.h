@@ -11,7 +11,7 @@
 #import "GoSegmentedControl.h"
 #import "STCollapseTableView.h"
 
-@interface SkillsHomeViewController : UIViewController <HTHorizontalSelectionListDataSource, HTHorizontalSelectionListDelegate, GoSegmentedControlDataSource, GoSegmentedControlDelegate> {
+@interface SkillsHomeViewController : UIViewController <HTHorizontalSelectionListDataSource, HTHorizontalSelectionListDelegate, GoSegmentedControlDataSource, GoSegmentedControlDelegate, UITableViewDataSource, UITableViewDelegate> {
     
     NSMutableArray *footerItems;
     NSMutableArray *headerItems;
