@@ -30,6 +30,15 @@
     
 }
 
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    _carouselView.hidden = YES;
+    _carouselView = nil;
+    
+}
+
 - (void) setupCaraouselDatasource {
     
     caraouselItems = [NSMutableArray array];

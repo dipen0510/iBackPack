@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D42356751F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D42356731F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.m */; };
+		D42356761F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D42356741F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.xib */; };
+		D42356791F6C122800BC0567 /* SkillsAssessmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42356781F6C122800BC0567 /* SkillsAssessmentViewController.m */; };
+		D423567D1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D423567B1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m */; };
+		D423567E1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D423567C1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib */; };
 		D47805151F2CBC6E00CE24E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D47805141F2CBC6E00CE24E1 /* main.m */; };
 		D47805181F2CBC6E00CE24E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D47805171F2CBC6E00CE24E1 /* AppDelegate.m */; };
 		D478051B1F2CBC6E00CE24E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D478051A1F2CBC6E00CE24E1 /* ViewController.m */; };
@@ -64,6 +69,9 @@
 		D4F6A74C1F665A4C004C8BE7 /* SettingsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F6A74B1F665A4C004C8BE7 /* SettingsHomeViewController.m */; };
 		D4F6A7511F665C38004C8BE7 /* SettingsHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F6A74F1F665C38004C8BE7 /* SettingsHomeTableViewCell.m */; };
 		D4F6A7521F665C38004C8BE7 /* SettingsHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4F6A7501F665C38004C8BE7 /* SettingsHomeTableViewCell.xib */; };
+		D4F6A7561F6735A3004C8BE7 /* SkillsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F6A7551F6735A3004C8BE7 /* SkillsHomeViewController.m */; };
+		D4F6A7591F6829C4004C8BE7 /* SkillsStudyGuideOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F6A7581F6829C4004C8BE7 /* SkillsStudyGuideOptionViewController.m */; };
+		D4F6A75C1F697982004C8BE7 /* SkillsCreateGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F6A75B1F697982004C8BE7 /* SkillsCreateGuideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +92,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D42356721F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsCreateGuideTableViewCell.h; sourceTree = "<group>"; };
+		D42356731F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsCreateGuideTableViewCell.m; sourceTree = "<group>"; };
+		D42356741F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsCreateGuideTableViewCell.xib; sourceTree = "<group>"; };
+		D42356771F6C122800BC0567 /* SkillsAssessmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsAssessmentViewController.h; sourceTree = "<group>"; };
+		D42356781F6C122800BC0567 /* SkillsAssessmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsAssessmentViewController.m; sourceTree = "<group>"; };
+		D423567A1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsAssessmentTableViewCell.h; sourceTree = "<group>"; };
+		D423567B1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsAssessmentTableViewCell.m; sourceTree = "<group>"; };
+		D423567C1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsAssessmentTableViewCell.xib; sourceTree = "<group>"; };
 		D47805101F2CBC6E00CE24E1 /* iBackPack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBackPack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47805141F2CBC6E00CE24E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D47805161F2CBC6E00CE24E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,6 +198,12 @@
 		D4F6A74E1F665C38004C8BE7 /* SettingsHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsHomeTableViewCell.h; sourceTree = "<group>"; };
 		D4F6A74F1F665C38004C8BE7 /* SettingsHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsHomeTableViewCell.m; sourceTree = "<group>"; };
 		D4F6A7501F665C38004C8BE7 /* SettingsHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsHomeTableViewCell.xib; sourceTree = "<group>"; };
+		D4F6A7541F6735A3004C8BE7 /* SkillsHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsHomeViewController.h; sourceTree = "<group>"; };
+		D4F6A7551F6735A3004C8BE7 /* SkillsHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsHomeViewController.m; sourceTree = "<group>"; };
+		D4F6A7571F6829C4004C8BE7 /* SkillsStudyGuideOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsStudyGuideOptionViewController.h; sourceTree = "<group>"; };
+		D4F6A7581F6829C4004C8BE7 /* SkillsStudyGuideOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsStudyGuideOptionViewController.m; sourceTree = "<group>"; };
+		D4F6A75A1F697982004C8BE7 /* SkillsCreateGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsCreateGuideViewController.h; sourceTree = "<group>"; };
+		D4F6A75B1F697982004C8BE7 /* SkillsCreateGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsCreateGuideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +231,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D42356711F6BFF8A00BC0567 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D42356721F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.h */,
+				D42356731F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.m */,
+				D42356741F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.xib */,
+				D423567A1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.h */,
+				D423567B1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m */,
+				D423567C1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		D47805071F2CBC6E00CE24E1 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +267,7 @@
 		D47805121F2CBC6E00CE24E1 /* iBackPack */ = {
 			isa = PBXGroup;
 			children = (
+				D4F6A7531F67357D004C8BE7 /* Skillls */,
 				D4F6A7491F665A34004C8BE7 /* Settings */,
 				D4CDFCBE1F48082300E65F7E /* Notebook */,
 				D4A8CB101F31130200C68812 /* Library */,
@@ -517,6 +553,22 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		D4F6A7531F67357D004C8BE7 /* Skillls */ = {
+			isa = PBXGroup;
+			children = (
+				D42356711F6BFF8A00BC0567 /* Cells */,
+				D4F6A7541F6735A3004C8BE7 /* SkillsHomeViewController.h */,
+				D4F6A7551F6735A3004C8BE7 /* SkillsHomeViewController.m */,
+				D4F6A7571F6829C4004C8BE7 /* SkillsStudyGuideOptionViewController.h */,
+				D4F6A7581F6829C4004C8BE7 /* SkillsStudyGuideOptionViewController.m */,
+				D4F6A75A1F697982004C8BE7 /* SkillsCreateGuideViewController.h */,
+				D4F6A75B1F697982004C8BE7 /* SkillsCreateGuideViewController.m */,
+				D42356771F6C122800BC0567 /* SkillsAssessmentViewController.h */,
+				D42356781F6C122800BC0567 /* SkillsAssessmentViewController.m */,
+			);
+			name = Skillls;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -633,7 +685,9 @@
 				D49E43841F3B1EF80077DE84 /* LibrarySearchTableViewCell.xib in Resources */,
 				D49E437F1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.xib in Resources */,
 				D4CDFCCE1F4848FD00E65F7E /* NotebookSubFoldersTableViewCell.xib in Resources */,
+				D423567E1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.xib in Resources */,
 				D47805231F2CBC6E00CE24E1 /* LaunchScreen.storyboard in Resources */,
+				D42356761F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.xib in Resources */,
 				D4CDFCED1F4888A100E65F7E /* NotebookPermissionsTableViewCell.xib in Resources */,
 				D49E43891F3B369C0077DE84 /* LibraryChatTableViewCell.xib in Resources */,
 				D496B6641F376A05002ECDA8 /* LibraryHomeTableViewCell.xib in Resources */,
@@ -670,20 +724,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CDFCE81F48871600E65F7E /* NotebookPermissionsViewController.m in Sources */,
+				D42356751F6BFFAF00BC0567 /* SkillsCreateGuideTableViewCell.m in Sources */,
 				D478051B1F2CBC6E00CE24E1 /* ViewController.m in Sources */,
 				D4CDFCDD1F487DB800E65F7E /* NotebookDeleteConfirmationViewController.m in Sources */,
 				D4A8CB131F31131000C68812 /* LibraryHomeViewController.m in Sources */,
 				D49E437E1F3B1B7C0077DE84 /* LibraryHomeDetailTableViewCell.m in Sources */,
+				D4F6A75C1F697982004C8BE7 /* SkillsCreateGuideViewController.m in Sources */,
 				D4CDFCD71F484D8F00E65F7E /* MGSwipeTableCell.m in Sources */,
+				D423567D1F6C13F500BC0567 /* SkillsAssessmentTableViewCell.m in Sources */,
 				D49E43831F3B1EF80077DE84 /* LibrarySearchTableViewCell.m in Sources */,
 				D496B6631F376A05002ECDA8 /* LibraryHomeTableViewCell.m in Sources */,
 				D4A8CB041F304F0300C68812 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				D4F6A7561F6735A3004C8BE7 /* SkillsHomeViewController.m in Sources */,
 				D4CDFCEC1F4888A100E65F7E /* NotebookPermissionsTableViewCell.m in Sources */,
 				D4A8CB051F304F0300C68812 /* UITextField+fixCaretPosition.swift in Sources */,
 				D4A8CB081F3075DD00C68812 /* AgendaBookAddNewViewController.m in Sources */,
 				D47806491F2CD31000CE24E1 /* iCarousel.m in Sources */,
 				D478065C1F2CD46800CE24E1 /* AgendaBookHomeViewController.m in Sources */,
 				D49E438D1F3B38B50077DE84 /* LibraryDownloadTableViewCell.m in Sources */,
+				D42356791F6C122800BC0567 /* SkillsAssessmentViewController.m in Sources */,
 				D4CDFCD61F484D8F00E65F7E /* MGSwipeButton.m in Sources */,
 				D4CDFCE51F48852100E65F7E /* CachedLI.m in Sources */,
 				D47806551F2CD40900CE24E1 /* HTHorizontalSelectionListCustomViewCell.m in Sources */,
@@ -706,6 +765,7 @@
 				D49E43881F3B369C0077DE84 /* LibraryChatTableViewCell.m in Sources */,
 				D4A8CB031F304F0300C68812 /* SkyFloatingLabelTextField.swift in Sources */,
 				D478066C1F2DB7BE00CE24E1 /* AgendaBookHomeCellViewController.m in Sources */,
+				D4F6A7591F6829C4004C8BE7 /* SkillsStudyGuideOptionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

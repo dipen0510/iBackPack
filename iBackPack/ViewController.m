@@ -46,6 +46,9 @@
     [_settingsView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(settingsTapped)]];
     _settingsView.userInteractionEnabled = YES;
     
+    [_skillsView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(skillsTapped)]];
+    _skillsView.userInteractionEnabled = YES;
+    
 }
 
 - (void) agendaBookTapped {
@@ -69,6 +72,12 @@
 - (void) settingsTapped {
     
     [self performSegueWithIdentifier:@"showSettingsSegue" sender:nil];
+    
+}
+
+- (void) skillsTapped {
+    
+    [self performSegueWithIdentifier:@"showSkillsSegue" sender:nil];
     
 }
 
